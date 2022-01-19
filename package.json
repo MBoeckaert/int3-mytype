@@ -18,8 +18,8 @@
     "resolve-url-loader": "^4.0.0",
     "style-loader": "^3.3.0",
     "stylelint-config-devine": "^2.0.3",
-    "webpack": "^5.56.1",
-    "webpack-cli": "^4.8.0",
+    "webpack": "^5.66.0",
+    "webpack-cli": "^4.9.1",
     "webpack-dev-server": "^4.3.1"
   },
   "scripts": {
@@ -30,5 +30,13 @@
     "heroku-postbuild": "npm run prod"
   },
   "author": "Frederik Duchi",
-  "license": "ISC"
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MBoeckaert/int3-mytype.git"
+  },
+  "bugs": {
+    "url": "https://github.com/MBoeckaert/int3-mytype/issues"
+  },
+  "homepage": "https://github.com/MBoeckaert/int3-mytype#readme"
 }
