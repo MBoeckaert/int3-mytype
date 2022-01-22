@@ -1,36 +1,49 @@
-<div class="container">
 <!-- landing page -->
-<main>
-  <h1>Clarendon <br>Typeface</h1>
-  <p>If Clarendon was invented today, it would
-probably be released as an NFT. A digital
-object ciruclating in the digital wild west.
-Brought to you by Slanted Publishers.</p>
+<main class="landing-page">
+  <h1 class="landing__title">Clarendon <br>Typeface</h1>
+  <div class="landing__text-bg">
+    <div class="landing-text">
+      <p class="landing__text-content">If Clarendon was invented today, it would
+        probably be released as an NFT. A digital
+        object ciruclating in the digital wild west.
+        Brought to you by Slanted Publishers.</p>
+      <div class="read-more">
+        <p>read more</p>
+        <p>icon</p>
+      </div>
+    </div>
+  </div>
 </main>
-<!-- section abt Besley -->
-<section class="section__creator">
-<h2>Robert Besley</h2>
-<p>creator of</p>
-<h2>Clarendon</h2>
-<p>
-  Clarendon was published in 1845 after Robert Besley, an employee
-of the fans street foundry since 1826, was made a partner in the
-Firm. Due to its popularity, Besley registered the typeface under
-Britain’s Ornamental Designs Act of 1842. The patent expired
-Three years later and other foundries were quick to copy it.
-Clarendon is considered the first registered typeface.
-</p>
 
-<p>a b c d e f g h i j k l m n o p q r s t u v w x y z a b c d e f g h I j k l m n o p q r s t u v  w x y z 1 2 3 4 5 6 7 8 9 0</p>
+<!-- section abt Besley -->
+
+<section class="section__creator">
+  <div class="creator__title">
+    <h2>Robert Besley</h2>
+    <p>creator of</p>
+    <h2 class="title__clarendon">Clarendon</h2>
+  </div>
+  <p class="creator__content">Clarendon was published in 1845 after Robert Besley, an employee
+  of the fans street foundry since 1826, was made a partner in the
+  Firm. Due to its popularity, Besley registered the typeface under
+  Britain’s Ornamental Designs Act of 1842. The patent expired
+  Three years later and other foundries were quick to copy it.
+  Clarendon is considered the first registered typeface.
+  </p>
+  <div class="creator__banner">
+    <p class="banner__content"> a b c d e f g h i j k l m n o p q r s t u v w x y z a b c d e f g h I j k l m n o p q r s t u v  w x y z 1 2 3 4 5 6 7 8 9 0</p>
+  </div>
 </section>
+
 <!-- section abt characteristics -->
+
 <section class="section__characteristics">
   <div class="characteristics__grid">
     <div class="bold">bold</div>
     <div class="display">display</div>
     <div class="face">face</div>
     <div class="with">with a</div>
-    <div class="softer">side</div>
+    <div class="softer">softer</div>
     <div class="side">side</div>
     <div class="for">for</div>
     <div class="advertising">advertising</div>
@@ -49,9 +62,9 @@ Clarendon is considered the first registered typeface.
   <p>NFT stands for Non-Fungible Token. It is a digital art piece or a digital version of a physical artwork and is uploaded on the blockchain, a big excel file on the internet. It certifies a digital asset is therefore not interchangeable, it also gives image rights and ownership back to the creators.
   </p>
 </section>
-
+<!-- why an NFT section -->
 <section class="section__why">
-  <div class="why__grid">
+  <div class="nft-why__grid">
     <div class="why">why</div>
     <div class="clarendon">clarendon</div>
     <div class="as-nft">as nft?</div>
@@ -69,5 +82,3 @@ Clarendon is considered the first registered typeface.
     money goes around & many scammers are lurking around.</p>
   </div>
 </section>
-
-</div>

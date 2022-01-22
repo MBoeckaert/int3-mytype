@@ -6,12 +6,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="https://use.typekit.net/vaq1qaw.css">
   <?php echo $css; ?>
-  <title>Webpack - php - template</title>
+  <title>Slanted: Clarendon</title>
 </head>
 <body>
   <div class="container">
-      <header><h1 class="pagetitle">Webpack - PHP - Template</h1></header>
-      <?php echo $content;?>
+    <?php echo $content;?>
   </div>
   <?php echo $js; ?>
 </body>
