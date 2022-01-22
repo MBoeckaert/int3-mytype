@@ -75,14 +75,16 @@
     <div class="as-nft">as nft?</div>
   </div>
 
+  <!-- another grid here -->
   <div class="why__reasons">
-    <p>The Clarendon design was immediately after creation
+    <p class="reasons__img">Here comes an img</p>
+    <p class="reasons__n1">The Clarendon design was immediately after creation
     very  popular and rapidly copied by other foundries.
     Thanks to the blockain, the original can be easily found.</p>
-    <p>Best known as the font of the lawless Wild West era. The
+    <p class="reasons__n2">Best known as the font of the lawless Wild West era. The
     crypto landscape is still in it's infancy and governments
     are still figuring out how they can regulate this space.</p>
-    <p>Robberies & the gold rush were also characteristic for the
+    <p class="reasons__n3">Robberies & the gold rush were also characteristic for the
     Wild West. The same is happening with NFT's where big
     money goes around & many scammers are lurking around.</p>
   </div>
