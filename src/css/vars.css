@@ -35,6 +35,21 @@ h2 {
   margin: 0 auto;
 }
 
+h3 {
+  font-size: 4rem;
+  color: var(--colorSecondary);
+  text-transform: uppercase;
+  margin: 0 auto;
+}
+
+.colorMain {
+  color: var(--colorMain);
+}
+
+.colorSecondary {
+  color: var(--colorSecondary);
+}
+
 main {
   min-height: 100vh;
   width: 100vw;
@@ -43,6 +58,10 @@ main {
 section {
   min-height: 100vh;
   width: 100vw;
+}
+
+p {
+  font-size: 1.5rem;
 }
 
 /* landing page css */
@@ -73,7 +92,6 @@ section {
 .landing-text {
   width: 50vw;
   min-height: 10vh;
-  background-color: aqua;
   margin: auto;
 }
 
@@ -85,6 +103,17 @@ section {
 .read-more {
   margin: auto;
   text-align: center;
+  color: var(--colorMain);
+}
+
+.read-more > p {
+  margin: 5vh auto .1rem;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+}
+
+.read-more > i {
+  font-size: 2rem;
 }
 
 /* Besley info css */
@@ -124,7 +153,8 @@ section {
   grid-area: creator__content;
   margin: 0 auto;
   width: 50vw;
-  background-color: aqua;
+  font-size: 1.5rem;
+  text-align: center;
 }
 
 .creator__banner {
@@ -132,7 +162,7 @@ section {
   align-self: flex-end;
   width: 100vw;
   min-height: 5vh;
-  margin: 0 auto;
+  margin: 0 auto 2vh;
   border-top: .3rem solid var(--colorSecondary);
   border-bottom: .3rem solid var(--colorSecondary);
 }
@@ -143,10 +173,6 @@ section {
 }
 
 /* Characteristics css */
-
-/* .section__characteristics {
-  min-
-} */
 
 .characteristics__grid {
   display: grid;
@@ -161,27 +187,116 @@ section {
     'advertising advertising'
     'announcements announcements'
     'displays displays';
+  width: 50vw;
+  margin: 10vh auto;
+  color: var(--colorSecondary);
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 4rem;
 }
 
-.bold { grid-area: bold; }
+.bold {
+  grid-area: bold;
+  color: var(--colorMain);
+}
 
 .display { grid-area: display; }
 
-.face { grid-area: face; }
+.face {
+  grid-area: face;
+  color: var(--colorMain);
+}
 
 .with { grid-area: with; }
 
-.softer { grid-area: softer; }
+.softer {
+  grid-area: softer;
+  color: var(--colorMain);
+}
 
 .side { grid-area: side; }
 
-.for { grid-area: for; }
+.for {
+  grid-area: for;
+  font-size: 1rem;
+  margin: auto;
+}
 
-.advertising { grid-area: advertising; }
+/* here need ::before & ::after line */
 
-.announcements { grid-area: announcements; }
+.advertising {
+  grid-area: advertising;
+  display: flex;
+  justify-content: space-between;
+}
 
-.displays { grid-area: displays; }
+.announcements {
+  grid-area: announcements;
+  color: var(--colorMain);
+}
+
+.displays {
+  grid-area: displays;
+  display: flex;
+  justify-content: space-between;
+}
+
+.characteristics__text {
+  margin: 0 auto;
+  width: 30vw;
+}
+
+.characteristics__title {
+  font-size: 2rem;
+  margin: 0 auto;
+  color: var(--colorSecondary);
+  text-align: center;
+}
+
+/* here an ::after as well for a line under title*/
+
+/* what is nft css */
+
+.section__nft {
+  display: flex;
+  flex-direction: column;
+}
+
+.nft__quote {
+  font-size: 2rem;
+  font-style: italic;
+  width: 50vw;
+  margin: 10vh auto;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.nft__quote > p {
+  margin: 0;
+}
+
+.nft__quote > p:nth-child(2) {
+  margin: 2vh auto;
+}
+
+.nft__title {
+  margin-bottom: 10vh;
+}
+
+.nft__text {
+  width: 30vw;
+  margin: 0 auto;
+}
+
+/* tabs not working? */
+
+.nft-tab1 {
+  tab-size: 2;
+}
+
+.nft-tab2 {
+  tab-size: 4;
+}
 
 .nft-why__grid {
   display: grid;

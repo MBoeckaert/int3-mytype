@@ -9,7 +9,7 @@
         Brought to you by Slanted Publishers.</p>
       <div class="read-more">
         <p>read more</p>
-        <p>icon</p>
+        <i class="fas fa-chevron-down"></i>
       </div>
     </div>
   </div>
@@ -46,20 +46,25 @@
     <div class="softer">softer</div>
     <div class="side">side</div>
     <div class="for">for</div>
-    <div class="advertising">advertising</div>
-    <div class="announcements">announcements</div>
-    <div class="displays">display</div>
+    <div class="advertising"><i class="fab fa-ethereum colorMain"></i> advertising <i class="fab fa-ethereum"></i></div>
+    <div class="announcements">announcements</i></div>
+    <div class="displays"><i class="fab fa-ethereum"></i> display <i class="fab fa-ethereum colorMain"></i></div>
   </div>
 
-  <h2>characteristics</h2>
-  <p>Clarendon is an English Slab-Serif. The strokes are fairly heavy of thick and thin weight contrast rather than a unfiform stroke. Characters such as f, a, e, and g have a rounded serif, in which is based on the roman model unlike the rest which is based on the Egyptian bold style. However, the squared serif are not as thick as most of the Egyptian style but rather have subtle brackets. Because of the bracketed serifs and the contrast in weights, it becomes a "problem as stroke become thinner it limits how tight the typeface can go (Velazquez).
-  </p>
+  <div class="characteristics__text">
+    <h2 class="characteristics__title">The first type<br> designed to be bold</h2>
+    <p>Clarendon is an English Slab-Serif. The strokes are fairly heavy of thick and thin weight contrast rather than a unfiform stroke. Characters such as f, a, e, and g have a rounded serif, in which is based on the roman model unlike the rest which is based on the Egyptian bold style. However, the squared serif are not as thick as most of the Egyptian style but rather have subtle brackets. Because of the bracketed serifs and the contrast in weights, it becomes a "problem as stroke become thinner it limits how tight the typeface can go (Velazquez).</p>
+  </div>
 </section>
 <!-- what is NFT section -->
 <section class="section__nft">
-  <p>if clarendon was released today, it would be an</p>
-  <h3>nft?!</h3>
-  <p>NFT stands for Non-Fungible Token. It is a digital art piece or a digital version of a physical artwork and is uploaded on the blockchain, a big excel file on the internet. It certifies a digital asset is therefore not interchangeable, it also gives image rights and ownership back to the creators.
+  <div class="nft__quote">
+    <p class="nft-tab">if clarendon was </p>
+    <p class="nft-tab1">  released   today,</p>
+    <p class="nft-tab2">  it would be an </p>
+  </div>
+  <h3 class="nft__title">nft?!</h3>
+  <p class="nft__text">NFT stands for Non-Fungible Token. It is a digital art piece or a digital version of a physical artwork and is uploaded on the blockchain, a big excel file on the internet. It certifies a digital asset is therefore not interchangeable, it also gives image rights and ownership back to the creators.
   </p>
 </section>
 <!-- why an NFT section -->
