@@ -17,6 +17,8 @@
 
 <!-- section abt Besley -->
 
+<div class="creator__lines"></div>
+
 <section class="section__creator">
   <div class="creator__title">
     <h2>Robert Besley</h2>
@@ -58,10 +60,15 @@
 </section>
 <!-- what is NFT section -->
 <section class="section__nft">
-  <div class="nft__quote">
+  <div class="nft__quote-mobile">
     <p class="nft-tab">if clarendon was </p>
     <p class="nft-tab1">  released   today,</p>
     <p class="nft-tab2">  it would be an </p>
+  </div>
+  <div class="nft__quote-desktop">
+    <p>"if clarendon was released today, </p>
+    <p> it would be an nft"</p>
+    <p class="quote__author">- Boeckaert M.</p>
   </div>
   <h3 class="nft__title">nft?!</h3>
   <p class="nft__text">NFT stands for Non-Fungible Token. It is a digital art piece or a digital version of a physical artwork and is uploaded on the blockchain, a big excel file on the internet. It certifies a digital asset is therefore not interchangeable, it also gives image rights and ownership back to the creators.

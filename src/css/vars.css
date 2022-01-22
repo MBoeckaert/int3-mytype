@@ -116,6 +116,54 @@ p {
   font-size: 2rem;
 }
 
+/* Tablet */
+/* @media (min-width: 768px) and (max-width: 1024px) {
+
+}
+
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+
+} */
+
+/* Desktop landing page */
+@media only screen and (min-width: 1025px) {
+
+  .landing-page {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 1fr;
+    grid-template-areas:
+      'land-txt land-img ';
+  }
+
+  .landing__title {
+    grid-area: land-img;
+    margin: auto;
+  }
+
+  .landing__text-bg {
+    grid-area: land-txt;
+    background-color: rgba(0, 0, 0, .2);
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    width: 40vw;
+  }
+
+  .landing-text {
+    width: 35vw;
+  }
+
+  .landing__text-content {
+    margin-top: 40vh;
+    text-align: center;
+  }
+
+  .read-more {
+    margin-top: 10vh;
+  }
+}
+
 /* Besley info css */
 
 .section__creator {
@@ -126,6 +174,13 @@ p {
     'creator__title'
     'creator__content'
     'creator__banner';
+}
+
+.creator__lines {
+  height: 2vh;
+  width: 100vw;
+  border-top: .2rem solid var(--colorSecondary);
+  border-bottom: .4rem solid var(--colorSecondary);
 }
 
 .creator__title {
@@ -188,7 +243,7 @@ p {
     'announcements announcements'
     'displays displays';
   width: 50vw;
-  margin: 10vh auto;
+  margin: 30vh auto;
   color: var(--colorSecondary);
   text-transform: uppercase;
   text-align: center;
@@ -262,7 +317,7 @@ p {
   flex-direction: column;
 }
 
-.nft__quote {
+.nft__quote-mobile {
   font-size: 2rem;
   font-style: italic;
   width: 50vw;
@@ -277,6 +332,10 @@ p {
 
 .nft__quote > p:nth-child(2) {
   margin: 2vh auto;
+}
+
+.nft__quote-desktop {
+  display: none;
 }
 
 .nft__title {
@@ -296,6 +355,39 @@ p {
 
 .nft-tab2 {
   tab-size: 4;
+}
+
+/* Desktop what is NFT? */
+@media only screen and (min-width: 1025px) {
+
+  .nft__quote-mobile {
+    display: none;
+  }
+
+  .nft__quote-desktop {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-style: italic;
+    width: 80vw;
+    margin: 45vh auto;
+    text-transform: uppercase;
+  }
+
+  .nft__quote-desktop > p {
+    font-size: 4rem;
+    width: 100%;
+    text-align: right;
+    margin: .2rem;
+  }
+
+  .nft__quote-desktop > .quote__author {
+    font-size: 1rem;
+  }
+
+  .nft__title {
+    display: none;
+  }
 }
 
 /* Why NFT section */
