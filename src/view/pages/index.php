@@ -1,6 +1,12 @@
 <!-- landing page -->
 <main class="landing-page">
-  <h1 class="landing__title">Clarendon <br>Typeface</h1>
+  <picture class="landing__img">
+    <source media="'(max-width: 767px)" srcset="../assets/img/clarendonMobile.png">
+    <source media="'(max-width: 1024px)" srcset="../assets/img/clarendonTablet.png">
+    <source media="'(min-width: 1025px)" srcset="../assets/img/clarendonDesktop.png">
+    <img class="img__billboard" src="../assets/img/clarendonDesktop.png" alt="clarendon billboard" > <!--  do i need width & height here? -->
+</picture>
+<!-- <img class="img__billboard" src="../assets/img/clarendonDesktop.png" alt="clarendon billboard" > -->
   <div class="landing__text-bg">
     <div class="landing-text">
       <p class="landing__text-content">If Clarendon was invented today, it would
