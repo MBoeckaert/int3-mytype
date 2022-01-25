@@ -3,6 +3,7 @@
   --colorText: white;
   --colorMain: #ff8000;
   --colorSecondary: #1c8da6;
+  --colorBlack: black;
   /* --colorGray: #fafafa;
   --colorGrayDark: #9c9c9c; */
   --spacerSmall: .75rem; /* 12px */
@@ -13,6 +14,7 @@
   --fontMedium: 1.25rem; /* 20px */
   --fontBig: 1.75rem; /* 28px */
   --font: 'clarendon-text-pro', serif;
+  --fontText: 'Helvetica', 'Arial', sans-serif;
   --fontWeightRegular: 400;
   --fontWeightBold: 500;
 }

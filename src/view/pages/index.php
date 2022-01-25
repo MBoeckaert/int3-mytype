@@ -44,8 +44,9 @@
   Firm. Due to its popularity, Besley registered the typeface under
   Britain’s Ornamental Designs Act of 1842. The patent expired
   Three years later and other foundries were quick to copy it.
-  Clarendon is considered the first registered typeface.
+  Clarendon is considered
   </p>
+  <p class="creator__registered uppercase">the first <br>registered typeface.</p>
   <div class="creator__banner">
     <p class="banner__content"> a b c d e f g h i j k l m n o p q r s t u v w x y z a b c d e f g h I j k l m n o p q r s t u v  w x y z 1 2 3 4 5 6 7 8 9 0</p>
   </div>
@@ -104,12 +105,12 @@
     <p class="reasons__img">Here comes an img</p>
     <!-- Make it a lsit -->
     <p class="reasons__n1">The Clarendon design was immediately after creation
-    very  popular and rapidly copied by other foundries.
+    very  popular and rapidly <span class="orange">copied</span> by other foundries.
     Thanks to the blockain, the original can be easily found.</p>
-    <p class="reasons__n2">Best known as the font of the lawless Wild West era. The
+    <p class="reasons__n2">Best known as the font of the <span class="orange">lawless</span> Wild West era. The
     crypto landscape is still in it's infancy and governments
     are still figuring out how they can regulate this space.</p>
-    <p class="reasons__n3">Robberies & the gold rush were also characteristic for the
+    <p class="reasons__n3"><span class="orange">Robberies & the gold rush</span> were also characteristic for the
     Wild West. The same is happening with NFT's where big
     money goes around & many scammers are lurking around.</p>
   </div>
@@ -154,14 +155,18 @@
   </div>
 </section>
 
-  <div class="end__quote">
+  <article class="end__quote">
     <p>"There's only room for</p>
     <div class="quote__middle">
       <p>one <span class="uppercase">font</span></p>
     </div>
     <p>int this town"</p>
-  </div>
+</article>
 
-  <!-- <section class="section__slanted">
-    <h3></h3>
-  </section> -->
+<article class="slanted">
+  <div class="slanted__content">
+    <h4 class="slanted__title">Next series in Slanted:</h4>
+    <p class="uppercase">Futura</p>
+  </div>
+</article>
+

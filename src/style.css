@@ -18,6 +18,7 @@ body {
   background-color: var(--colorBg);
   color: white;
   font-size: var(--fontRegular);
+  margin: 0;
 }
 
 /* .container {
@@ -64,6 +65,7 @@ section {
 }
 
 p {
+  font-family: var(--fontText);
   font-size: var(--fontRegular);
   letter-spacing: .1rem;
   line-height: 1.4rem;
@@ -124,18 +126,18 @@ img, source {
 .landing-text {
   /* min-height: 10vh; */
   margin: auto;
-}
 
-.landing__text-content {
-  width: 80vw;
-  margin: 5vh auto 0;
-  font-size: var(--fontRegular);
-}
+  & .landing__text-content {
+    width: 80vw;
+    margin: 5vh auto 0;
+    font-size: var(--fontRegular);
+  }
 
-.read-more {
-  margin: auto;
-  text-align: center;
-  color: var(--colorMain);
+  & .read-more {
+    margin: auto;
+    text-align: center;
+    color: var(--colorMain);
+  }
 }
 
 .read-more > p {
@@ -213,10 +215,11 @@ img, source {
 .section__creator {
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 2fr 1fr 1fr;
+  grid-template-rows: 2fr 1fr 1fr 1fr;
   grid-template-areas:
     'creator__title'
     'creator__content'
+    'creator__registered'
     'creator__banner';
   height: 100vh;
   width: 100vw;
@@ -232,7 +235,7 @@ img, source {
 .creator__title {
   grid-area: creator__title;
   margin: 10vh auto 0;
-  padding-top: 10vh;
+  /* padding-top: 10vh; */
   min-height: 10vh;
   display: flex;
   flex-direction: column;
@@ -258,24 +261,33 @@ img, source {
   text-align: center;
 }
 
+.creator__registered {
+  grid-area: creator__registered;
+  font-size: var(--fontMedium);
+  font-weight: var(--fontWeightBold);
+  color: var(--colorMain);
+  text-align: center;
+  margin: 1vh;
+}
+
 .creator__banner {
   grid-area: creator__banner;
   align-self: flex-end;
-  /* width: 100vw; */
   height: 7vh;
   /* margin: 0 auto 2vh; */
   border-top: .3rem solid var(--colorSecondary);
   border-bottom: .3rem solid var(--colorSecondary);
-}
+  display: flex;
+  align-items: center;
 
-.banner__content {
-  height: 5vh;
-  width: 100vw;
-  font-size: 1.5rem;
-  /* text-align: center; */
-  overflow: hidden;
-  margin: 0;
-  line-height: 2rem;
+  & .banner__content {
+    height: 5vh;
+    width: 100vw;
+    font-size: 1.5rem;
+    overflow-x: scroll;
+    white-space: nowrap;
+    padding: 1vh;
+  }
 }
 
 /* Characteristics css */
@@ -350,13 +362,13 @@ img, source {
 .characteristics__text {
   margin: 0 auto;
   /* width: 95vw; */
-}
 
-.characteristics__title {
-  font-size: 1.5rem;
-  margin: 0 auto;
-  color: var(--colorSecondary);
-  text-align: center;
+  & .characteristics__title {
+    font-size: 1.5rem;
+    margin: 0 auto;
+    color: var(--colorSecondary);
+    text-align: center;
+  }
 }
 
 .characteristics__text > p {
@@ -371,14 +383,27 @@ img, source {
 .section__nft {
   display: flex;
   flex-direction: column;
-}
 
-.nft__quote-mobile {
-  font-size: 2rem;
-  font-style: italic;
-  margin: 25vh auto 5vh;
-  /* text-align: center; */
-  text-transform: uppercase;
+  & .nft__quote-mobile {
+    font-size: 2rem;
+    font-style: italic;
+    margin: 25vh auto 5vh;
+    /* text-align: center; */
+    text-transform: uppercase;
+  }
+
+  & .nft__quote-desktop {
+    display: none;
+  }
+
+  & .nft__title {
+    margin-bottom: 10vh;
+  }
+
+  & .nft__text {
+    width: 80vw;
+    margin: 0 auto;
+  }
 }
 
 .nft__quote-mobile > p {
@@ -396,19 +421,6 @@ img, source {
 .nft-tab2 {
   tab-size: 16;
 } */
-
-.nft__quote-desktop {
-  display: none;
-}
-
-.nft__title {
-  margin-bottom: 10vh;
-}
-
-.nft__text {
-  width: 80vw;
-  margin: 0 auto;
-}
 
 /* Desktop what is NFT? */
 @media only screen and (min-width: 1025px) {
@@ -479,7 +491,7 @@ img, source {
 .why__reasons {
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 2fr 1fr 1fr 1fr;
   grid-auto-flow: row;
   grid-template-areas:
     'reasons__img'
@@ -492,6 +504,8 @@ img, source {
 
 .reasons__img {
   grid-area: reasons__img;
+  height: 30vh;
+  background-color: white;
 }
 
 /* for numbering behind alinea, ::before? */
@@ -615,6 +629,7 @@ img, source {
 .wanted__reward-amount {
   grid-area: reward__amount;
   margin: 0;
+  color: var(--colorMain);
 }
 
 .section__bounty {
@@ -626,6 +641,7 @@ img, source {
   width: 90vw;
   margin: auto;
   border: .2rem solid var(--colorMain);
+  border-radius: .5rem;
 
   & .bounty__outlaw {
     display: flex;
@@ -646,7 +662,7 @@ img, source {
 }
 
 .end__quote {
-  height: 60vh;
+  height: 40vh;
   width: 90vw;
   margin: auto;
   text-align: center;
@@ -665,6 +681,33 @@ img, source {
 
     & p {
       margin: 2vh;
+    }
+  }
+}
+
+.slanted {
+  background-color: var(--colorBlack);
+  height: 30vh;
+
+  & .slanted__content {
+    width: 80vw;
+    /* height: 30vh; */
+    margin: 0 auto;
+    padding-top: 5vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    & h4 {
+      font-size: var(--fontMedium);
+      font-family: var(--fontText);
+      text-decoration: underline;
+    }
+
+    & p {
+      font-size: var(--fontBig);
+      margin: 0;
     }
   }
 }
