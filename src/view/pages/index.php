@@ -1,6 +1,20 @@
 <!-- landing page -->
 <main class="landing-page">
-  <h1 class="landing__title">Clarendon <br>Typeface</h1>
+  <div class="landing__img">
+    <picture>
+      <source media="'(max-width: 767px)" srcset="../assets/img/clarendonMobile.png">
+      <source media="'(max-width: 1024px)" srcset="../assets/img/clarendonTablet.png">
+      <source media="'(min-width: 1025px)" srcset="../assets/img/clarendonDesktop.png">
+      <img class="img__billboard" src="../assets/img/clarendonMobile.png" alt="clarendon billboard" > <!--  do i need width & height here? -->
+    </picture>
+    <picture>
+      <source media="'(max-width: 767px)" srcset="../assets/img/typefaceMobile.png">
+      <source media="'(max-width: 1024px)" srcset="../assets/img/typefaceTablet.png">
+      <source media="'(min-width: 1025px)" srcset="../assets/img/typefaceDesktop.png">
+      <img class="img__billboard" src="../assets/img/typefaceMobile.png" alt="typeface billboard" > <!--  do i need width & height here? -->
+    </picture>
+  </div>
+<!-- <img class="img__billboard" src="../assets/img/clarendonDesktop.png" alt="clarendon billboard" > -->
   <div class="landing__text-bg">
     <div class="landing-text">
       <p class="landing__text-content">If Clarendon was invented today, it would
@@ -21,9 +35,9 @@
 
 <section class="section__creator">
   <div class="creator__title">
-    <h2>Robert Besley</h2>
+    <h1>Robert Besley</h1>
     <p>creator of</p>
-    <h2 class="title__clarendon">Clarendon</h2>
+    <h1 class="title__clarendon">Clarendon</h1>
   </div>
   <p class="creator__content">Clarendon was published in 1845 after Robert Besley, an employee
   of the fans street foundry since 1826, was made a partner in the
@@ -55,9 +69,12 @@
 
   <div class="characteristics__text">
     <h2 class="characteristics__title">The first type<br> designed to be bold</h2>
-    <p>Clarendon is an English Slab-Serif. The strokes are fairly heavy of thick and thin weight contrast rather than a unfiform stroke. Characters such as f, a, e, and g have a rounded serif, in which is based on the roman model unlike the rest which is based on the Egyptian bold style. However, the squared serif are not as thick as most of the Egyptian style but rather have subtle brackets. Because of the bracketed serifs and the contrast in weights, it becomes a "problem as stroke become thinner it limits how tight the typeface can go (Velazquez).</p>
+    <p>Clarendon is an English Slab-Serif. The strokes are fairly heavy of thick and thin weight contrast rather than a unfiform stroke. Characters such as f, a, e, and g have a <span class="orange">rounded serif</span>, in which is based on the roman model unlike the rest which is based on the Egyptian bold style. However, the squared serif are not as thick as most of the Egyptian style but rather have <span class="orange">subtle brackets</span>. Because of the bracketed serifs and the contrast in weights, it becomes a "problem as stroke become thinner it limits how tight the typeface can go (Velazquez).</p>
   </div>
 </section>
+
+<div class="creator__lines"></div>
+
 <!-- what is NFT section -->
 <section class="section__nft">
   <div class="nft__quote-mobile">
@@ -71,7 +88,7 @@
     <p class="quote__author">- Boeckaert M.</p>
   </div>
   <h3 class="nft__title">nft?!</h3>
-  <p class="nft__text">NFT stands for Non-Fungible Token. It is a digital art piece or a digital version of a physical artwork and is uploaded on the blockchain, a big excel file on the internet. It certifies a digital asset is therefore not interchangeable, it also gives image rights and ownership back to the creators.
+  <p class="nft__text">NFT stands for <span class="orange">Non-Fungible Token</span>. It is a digital art piece or a digital version of a physical artwork and is uploaded on the blockchain, a big excel file on the internet. It certifies a digital asset is therefore not interchangeable, it also gives image rights and ownership back to the creators.
   </p>
 </section>
 <!-- why an NFT section -->
@@ -85,6 +102,7 @@
   <!-- another grid here -->
   <div class="why__reasons">
     <p class="reasons__img">Here comes an img</p>
+    <!-- Make it a lsit -->
     <p class="reasons__n1">The Clarendon design was immediately after creation
     very  popular and rapidly copied by other foundries.
     Thanks to the blockain, the original can be easily found.</p>
@@ -96,3 +114,54 @@
     money goes around & many scammers are lurking around.</p>
   </div>
 </section>
+
+<!-- Outlaw/Wanted section -->
+
+<section class="section__outlaws">
+  <div class="outlaws__title">
+    <p>meet</p>
+    <h2>the outlaws</h2>
+  </div>
+  <div class="outlaws__wanted-poster">
+    <h2 class="h2__western">wanted</h2>
+    <div class="wanted__poster-border">
+      <div class="wanted-poster__content">
+        <h4 class="wanted__doa">Dead or Alive</h4>
+        <p class="wanted__img">here comes the img</p>
+        <p class="wanted__craw">Craw</p>
+        <p class="wanted__consort">Consort</p>
+        <p class="wanted__roman">Roman</p>
+        <h4 class="wanted__clarendon">Clarendon</h4>
+        <p class="wanted__reward">reward:</p>
+        <p class="wanted__reward-amount">
+          <i class="fab fa-ethereum"></i>210 <span class="small">(€900,453)</span>
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Bounty section -->
+
+<section class="section__bounty">
+  <h2 class="h2__western">bounty</h2>
+  <div class="bounty__board">
+    <div class="bounty__outlaw">
+      <p class="outlaw__img">bounty img</p>
+      <p class="wanted__craw">Craw Clarendon</p>
+      <button>Collect bounty</button>
+    </div>
+  </div>
+</section>
+
+  <div class="end__quote">
+    <p>"There's only room for</p>
+    <div class="quote__middle">
+      <p>one <span class="uppercase">font</span></p>
+    </div>
+    <p>int this town"</p>
+  </div>
+
+  <!-- <section class="section__slanted">
+    <h3></h3>
+  </section> -->
