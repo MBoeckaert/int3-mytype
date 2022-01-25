@@ -146,17 +146,22 @@
 <section class="section__bounty">
   <h2 class="h2__western">bounty</h2>
   <div class="bounty__board">
-    <div class="bounty__img">
-      <p>bounty img</p>
-      <p class="wanted__craw">Craw</p>
+    <div class="bounty__outlaw">
+      <p class="outlaw__img">bounty img</p>
+      <p class="wanted__craw">Craw Clarendon</p>
       <button>Collect bounty</button>
     </div>
   </div>
-  <div class="end__quote">
-      <p>"There's only room for</p>
-  <div class="quote__middle">
-    <p>one <span class="uppercase">font</span></p>
-  </div>
-  <p>int this town"</p>
-  </div>
 </section>
+
+  <div class="end__quote">
+    <p>"There's only room for</p>
+    <div class="quote__middle">
+      <p>one <span class="uppercase">font</span></p>
+    </div>
+    <p>int this town"</p>
+  </div>
+
+  <!-- <section class="section__slanted">
+    <h3></h3>
+  </section> -->

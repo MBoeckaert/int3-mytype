@@ -78,6 +78,10 @@ p {
   /* font-size: .5rem; */
 }
 
+.uppercase {
+  text-transform: uppercase;
+}
+
 /* landing page css */
 
 .landing-page {
@@ -615,5 +619,52 @@ img, source {
 
 .section__bounty {
   margin-top: 20vh;
-  /* height: 60vh; */
+}
+
+.bounty__board {
+  height: 60vh;
+  width: 90vw;
+  margin: auto;
+  border: .2rem solid var(--colorMain);
+
+  & .bounty__outlaw {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    & .outlaw__img {
+      width: 80%;
+      background-color: white;
+      height: 40vh;
+      margin: 3vh auto;
+    }
+
+    & button {
+      margin: 3vh auto;
+    }
+  }
+}
+
+.end__quote {
+  height: 60vh;
+  width: 90vw;
+  margin: auto;
+  text-align: center;
+  color: var(--colorMain);
+  font-style: italic;
+
+  & p {
+    font-size: var(--fontBig);
+    margin: 2vh 0;
+  }
+
+  & .quote__middle {
+    border-top: .4rem solid var(--colorSecondary);
+    border-bottom: .4rem solid var(--colorSecondary);
+    color: var(--colorSecondary);
+
+    & p {
+      margin: 2vh;
+    }
+  }
 }
