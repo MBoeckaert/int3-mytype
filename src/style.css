@@ -629,7 +629,7 @@ img, source {
 
   & .nft__text-container {
     grid-area: nft__text;
-    width: 30rem;
+    width: 20rem;
     margin: 0 auto;
   }
 
@@ -971,7 +971,7 @@ img, source {
 /* Outlaws/Wanted section */
 
 .outlaws__title {
-  width: 90vw;
+  width: 80vw;
   margin: 20vh auto;
 }
 
@@ -979,6 +979,7 @@ img, source {
   color: var(--colorMain);
   margin: 0;
   text-transform: uppercase;
+  font-family: var(--font);
 }
 
 .outlaws__title > h2 {
@@ -999,12 +1000,9 @@ img, source {
   text-align: center;
 }
 
-.wanted__poster-border {
+.wanted-poster__content {
   border-top: .2rem solid var(--colorMain);
   border-bottom: .2rem solid var(--colorMain);
-}
-
-.wanted-poster__content {
   display: grid;
   grid-template-columns: repeat(6, 1fr);
   grid-template-rows: 1fr 1fr .5fr 1fr 1fr;
@@ -1031,7 +1029,9 @@ img, source {
 
 .wanted__img {
   grid-area: wanted__img;
-  height: 20vh;
+  height: 30vh;
+  width: 60vw;
+  margin: auto;
   background-color: white;
 }
 
@@ -1078,6 +1078,90 @@ img, source {
   color: var(--colorMain);
 }
 
+/* Tablet */
+@media (min-width: 768px) and (max-width: 1024px) {
+
+  .outlaws__title > p {
+    font-size: var(--fontMedium);
+  }
+
+  .h2__western {
+    font-size: 4rem;
+  }
+
+  .outlaws__wanted-poster {
+
+    & .wanted__doa {
+      font-size: var(--fontBig);
+    }
+
+    & .wanted__clarendon {
+      font-size: 2rem;
+    }
+
+    & p {
+      font-size: var(--fontMedium);
+    }
+
+    & .wanted__reward-amount {
+      font-size: 2rem;
+    }
+
+    & .wanted__reward {
+      font-size: 2rem;
+    }
+  }
+}
+
+/* Desktop what is NFT? */
+@media only screen and (min-width: 1025px) {
+
+  .outlaws__title > p {
+    font-size: var(--fontBig);
+  }
+
+  .h2__western {
+    font-size: 6rem;
+  }
+
+  .outlaws__wanted-poster {
+
+    & .wanted-poster__content {
+      height: 80vh;
+    }
+
+    & .wanted__img {
+      margin-bottom: 1vh;
+      height: 40vh;
+      width: 50rem;
+    }
+
+    & .wanted__doa {
+      font-size: 3rem;
+    }
+
+    & .wanted__clarendon {
+      font-size: 3rem;
+      margin: 5vh;
+    }
+
+    & p {
+      font-size: var(--fontBig);
+    }
+
+    & .wanted__reward-amount {
+      font-size: 3rem;
+    }
+
+    & .wanted__reward {
+      font-size: 3rem;
+      text-align: end;
+    }
+  }
+}
+
+/* Bounty section */
+
 .section__bounty {
   margin-top: 20vh;
 }
@@ -1093,12 +1177,19 @@ img, source {
     display: flex;
     flex-direction: column;
     align-items: center;
+    height: 100%;
 
     & .outlaw__img {
-      width: 80%;
+      width: 90%;
       background-color: white;
-      height: 40vh;
+      height: 80%;
       margin: 3vh auto;
+    }
+
+    & .wanted__craw {
+      font-size: var(--fontBig);
+      font-family: var(--font);
+      font-weight: bold;
     }
 
     & button {
@@ -1106,6 +1197,28 @@ img, source {
     }
   }
 }
+
+/* Tablet */
+@media (min-width: 768px) and (max-width: 1024px) {
+
+  .bounty__board {
+
+    & .wanted__craw {
+      font-size: 2rem;
+    }
+  }
+}
+
+/* Desktop */
+/* @media only screen and (min-width: 1025px) {
+
+  .bounty__board {
+
+    & .wanted__craw {
+      font-size: 3rem;
+    }
+  }
+} */
 
 .end__quote {
   height: 40vh;
@@ -1127,6 +1240,40 @@ img, source {
 
     & p {
       margin: 2vh;
+    }
+  }
+}
+
+/* Tablet */
+@media (min-width: 768px) and (max-width: 1024px) {
+
+  .end__quote {
+    height: 60vh;
+
+    & p {
+      font-size: 4rem;
+      margin: 4vh;
+    }
+
+    & .quote__middle {
+      padding: 2vh;
+    }
+  }
+}
+
+/* Desktop what is NFT? */
+@media only screen and (min-width: 1025px) {
+
+  .end__quote {
+    height: 80vh;
+
+    & p {
+      font-size: 5rem;
+      margin: 6vh;
+    }
+
+    & .quote__middle {
+      padding: 2vh;
     }
   }
 }
