@@ -160,6 +160,14 @@ img, source {
       font-size: var(--fontMedium);
     }
   }
+
+  .read-more > p {
+    font-size: var(--fontMedium);
+  }
+
+  .read-more > i {
+    font-size: var(--fontMedium);
+  }
 }
 
 @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
@@ -220,6 +228,14 @@ img, source {
 
   .read-more {
     margin-top: 10vh;
+  }
+
+  .read-more > p {
+    font-size: var(--fontMedium);
+  }
+
+  .read-more > i {
+    font-size: var(--fontMedium);
   }
 }
 
@@ -529,6 +545,7 @@ img, source {
 
     & p {
       width: 100%;
+      font-size: var(--fontMedium);
     }
   }
 }
@@ -572,14 +589,16 @@ img, source {
   }
 
   .characteristics__text {
-    width: 30rem;
+    width: 35rem;
 
     & .characteristics__title {
-      font-size: 2rem;
+      font-size: 2.5rem;
     }
 
     & p {
       width: 100%;
+      font-size: var(--fontBig);
+      line-height: 2rem;
     }
   }
 }
@@ -765,7 +784,7 @@ img, source {
       margin: 30vh auto;
 
       & .nft__actual-quote {
-        font-size: 2.8rem;
+        font-size: 2.6rem;
         font-family: var(--font);
         font-style: italic;
         margin: 3vh auto;
@@ -1012,7 +1031,7 @@ img, source {
     'wanted__img wanted__img wanted__img wanted__img wanted__img wanted__img'
     'craw craw consort consort roman roman'
     'wanted__clarendon wanted__clarendon wanted__clarendon wanted__clarendon wanted__clarendon wanted__clarendon'
-    'wanted__reward wanted__reward wanted__reward reward__amount reward__amount reward__amount';
+    '. wanted__reward wanted__reward reward__amount reward__amount .';
   width: 80vw;
   height: 60vh;
   margin: auto;
@@ -1085,6 +1104,10 @@ img, source {
     font-size: var(--fontMedium);
   }
 
+  .outlaws__title > h2 {
+    font-size: 3rem;
+  }
+
   .h2__western {
     font-size: 4rem;
   }
@@ -1118,6 +1141,10 @@ img, source {
 
   .outlaws__title > p {
     font-size: var(--fontBig);
+  }
+
+  .outlaws__title > h2 {
+    font-size: 5rem;
   }
 
   .h2__western {
@@ -1281,26 +1308,88 @@ img, source {
 .slanted {
   background-color: var(--colorBlack);
   height: 30vh;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-auto-flow: row;
+  grid-template-areas:
+    'slanted__title'
+    'slanted__next'
+    'slanted__previous';
 
-  & .slanted__content {
-    width: 80vw;
-    /* height: 30vh; */
-    margin: 0 auto;
-    padding-top: 5vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-
-    & h4 {
-      font-size: var(--fontMedium);
-      font-family: var(--fontText);
-      letter-spacing: .1rem;
-    }
+  & .slanted__title {
+    grid-area: slanted__title;
+    margin: auto;
 
     & p {
-      font-size: var(--fontBig);
-      margin: 0;
+      font-size: 1.5rem;
+      margin: 1vh;
+      text-align: center;
     }
+  }
+}
+
+.slanted__next {
+  grid-area: slanted__next;
+}
+
+.slanted__previous {
+  grid-area: slanted__previous;
+}
+
+.slanted__next, .slanted__previous {
+  width: 80vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+
+  & h4 {
+    font-size: var(--fontMedium);
+    font-family: var(--fontText);
+    letter-spacing: .1rem;
+    margin: 0;
+    text-decoration: underline;
+  }
+}
+
+.footer {
+  width: 100vw;
+  background-color: black;
+  margin: 0 auto;
+}
+
+.footer__container {
+  border-top: .2rem solid var(--colorMain);
+  height: 10vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: var(--colorMain);
+
+  & a {
+    text-decoration: none;
+    color: var(--colorMain);
+  }
+}
+
+/* Tablet */
+@media (min-width: 768px) and (max-width: 1024px) {
+
+  .footer__container {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0 2vh;
+  }
+}
+
+/* Desktop */
+@media only screen and (min-width: 1025px) {
+
+  .footer__container {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0 2vh;
   }
 }

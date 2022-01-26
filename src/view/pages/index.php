@@ -165,13 +165,28 @@
     <div class="quote__middle">
       <p>one <span class="uppercase">font</span></p>
     </div>
-    <p>int this town"</p>
+    <p>in this town"</p>
 </article>
 
 <article class="slanted">
-  <div class="slanted__content">
-    <h4 class="slanted__title">Next week in Slanted:</h4>
+  <div class="slanted__title">
+    <p>Read our other issues</p>
+  </div>
+  <div class="slanted__next">
+    <h4>Next week:</h4>
     <p class="uppercase">Futura</p>
   </div>
+  <div class="slanted__previous">
+    <h4>Previous week:</h4>
+    <p class="uppercase">Bodoni</p>
+  </div>
 </article>
+
+<footer class="footer">
+  <div class="footer__container">
+    <p>slanted publishers</p>
+    <a href="https://www.slanted.de/">slanted.de</a>
+    <p>By Matthias Boeckaert</p>
+  </div>
+</footer>
 
