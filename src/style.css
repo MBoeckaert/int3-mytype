@@ -26,7 +26,7 @@ body {
 } */
 
 h1 {
-  font-size: 2rem;
+  font-size: 2.5rem;
   color: var(--colorMain);
   text-transform: uppercase;
   margin: 0 auto;
@@ -53,11 +53,6 @@ h3 {
 .colorSecondary {
   color: var(--colorSecondary);
 }
-
-/* main {
-  min-height: 100vh;
-  width: 100vw;
-} */
 
 section {
   min-height: 100vh;
@@ -102,7 +97,7 @@ p {
 .landing__img {
   grid-area: land-img;
   height: 65vh;
-  width: 100vw;
+  /* width: 100vw; */
   display: flex;
   align-items: center;
 }
@@ -158,6 +153,13 @@ img, source {
     background-repeat: no-repeat;
     background-size: contain;
   }
+
+  .landing-text {
+
+    & .landing__text-content {
+      font-size: var(--fontMedium);
+    }
+  }
 }
 
 @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
@@ -166,6 +168,13 @@ img, source {
     background-image: url(../assets/img/neonTablet.png);
     background-repeat: no-repeat;
     background-size: contain;
+  }
+
+  .landing-text {
+
+    & .landing__text-content {
+      font-size: var(--fontMedium);
+    }
   }
 }
 
@@ -182,7 +191,7 @@ img, source {
     background-repeat: no-repeat;
   }
 
-  .landing__title {
+  .landing__img {
     grid-area: land-img;
     margin: auto;
   }
@@ -193,16 +202,20 @@ img, source {
     margin: 0 auto;
     display: flex;
     flex-direction: column;
+    height: 100vh;
     width: 40vw;
   }
 
   .landing-text {
-    width: 35vw;
-  }
+    /* width: 35vw; */
 
-  .landing__text-content {
-    margin-top: 40vh;
-    text-align: center;
+    & .landing__text-content {
+      width: 35vw;
+      margin-top: 40vh;
+      text-align: center;
+      font-size: var(--fontBig);
+      line-height: 2rem;
+    }
   }
 
   .read-more {
@@ -215,8 +228,9 @@ img, source {
 .section__creator {
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 2fr 1fr 1fr 1fr;
+  grid-template-rows: repeat(5, 1fr);
   grid-template-areas:
+    '.'
     'creator__title'
     'creator__content'
     'creator__registered'
@@ -234,7 +248,7 @@ img, source {
 
 .creator__title {
   grid-area: creator__title;
-  margin: 10vh auto 0;
+  margin: auto;
   /* padding-top: 10vh; */
   min-height: 10vh;
   display: flex;
@@ -244,6 +258,10 @@ img, source {
 
 .title__clarendon {
   text-decoration: underline;
+  font-size: 2.5rem;
+  color: var(--colorMain);
+  text-transform: uppercase;
+  margin: 0 auto;
 }
 
 .creator__title > p {
@@ -256,7 +274,7 @@ img, source {
 .creator__content {
   grid-area: creator__content;
   margin: 0 auto;
-  width: 80vw;
+  width: 20rem;
   font-size: var(--fontRegular);
   text-align: center;
 }
@@ -290,6 +308,109 @@ img, source {
   }
 }
 
+/* Tablet */
+@media (min-width: 768px) and (max-width: 1024px) {
+
+  .section__creator {
+    grid-template-rows: 1fr 1fr 1.5fr 1fr 1fr;
+  }
+
+  .creator__title > h1, .title__clarendon {
+    font-size: 4rem;
+  }
+
+  .creator__title > p {
+    font-size: var(--fontRegular);
+  }
+
+  .creator__registered {
+    font-size: var(--fontBig);
+    line-height: 2rem;
+    font-weight: bold;
+  }
+
+  .creator__registered > br {
+    display: none;
+  }
+
+  .creator__content {
+    font-size: var(--fontMedium);
+    line-height: 2rem;
+    margin: auto;
+    width: 35rem;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+
+  .section__creator {
+    grid-template-rows: 2fr 1.5fr 1fr 1fr;
+    grid-template-areas:
+      'creator__title'
+      'creator__content'
+      'creator__registered'
+      'creator__banner';
+  }
+
+  .creator__title > h1, .title__clarendon {
+    font-size: 4rem;
+  }
+
+  .creator__title > p {
+    font-size: var(--fontRegular);
+  }
+
+  .creator__registered {
+    font-size: var(--fontBig);
+    line-height: 2rem;
+    font-weight: bold;
+  }
+
+  .creator__content {
+    font-size: var(--fontMedium);
+    line-height: 2rem;
+    margin: auto;
+    width: 35rem;
+  }
+}
+
+/* Desktop landing page */
+@media only screen and (min-width: 1025px) {
+
+  .section__creator {
+    grid-template-rows: 2.5fr 2fr 1fr 1fr;
+    grid-template-areas:
+      'creator__title'
+      'creator__content'
+      'creator__registered'
+      'creator__banner';
+  }
+
+  .creator__title > h1, .title__clarendon {
+    font-size: 6rem;
+  }
+
+  .creator__title > p {
+    font-size: var(--fontMedium);
+  }
+
+  .creator__registered {
+    font-size: 2rem;
+    line-height: 2rem;
+    font-weight: bold;
+  }
+
+  .creator__registered > br {
+    display: none;
+  }
+
+  .creator__content {
+    font-size: var(--fontBig);
+    line-height: 2.5rem;
+    width: 49rem;
+  }
+}
+
 /* Characteristics css */
 
 .characteristics__grid {
@@ -306,7 +427,7 @@ img, source {
     'announcements announcements'
     'displays displays';
   width: 80vw;
-  margin: 25vh auto;
+  margin: 20vh auto;
   color: var(--colorSecondary);
   text-transform: uppercase;
   text-align: center;
@@ -346,6 +467,8 @@ img, source {
   grid-area: advertising;
   display: flex;
   justify-content: space-between;
+  width: 80%;
+  margin: 0 auto;
 }
 
 .announcements {
@@ -357,23 +480,108 @@ img, source {
   grid-area: displays;
   display: flex;
   justify-content: space-between;
+  width: 80%;
+  margin: 0 auto;
 }
 
 .characteristics__text {
-  margin: 0 auto;
+  margin: 0 auto 10vh;
   /* width: 95vw; */
 
   & .characteristics__title {
     font-size: 1.5rem;
-    margin: 0 auto;
+    margin: 0 auto 5vh;
     color: var(--colorSecondary);
     text-align: center;
+  }
+
+  & .characteristics__img {
+    height: 30vh;
+    background-color: white;
+    margin: 2vh auto;
   }
 }
 
 .characteristics__text > p {
-  margin: 5vh auto 10vh;
+  margin: 1vh auto;
   width: 80vw;
+}
+
+/* Tablet */
+@media (min-width: 768px) and (max-width: 1024px) {
+
+  .characteristics__grid {
+    gap: .5rem;
+    width: 30rem;
+    font-size: 3rem;
+  }
+
+  .advertising, .displays {
+    width: 100%;
+  }
+
+  .characteristics__text {
+    width: 30rem;
+
+    & .characteristics__title {
+      font-size: 2rem;
+    }
+
+    & p {
+      width: 100%;
+    }
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+
+  .characteristics__grid {
+    gap: .2rem;
+    width: 35rem;
+    font-size: 3rem;
+  }
+
+  .advertising, .displays {
+    width: 100%;
+  }
+
+  .characteristics__text {
+    width: 30rem;
+
+    & .characteristics__title {
+      font-size: 2rem;
+    }
+
+    & p {
+      width: 100%;
+    }
+  }
+}
+
+/* Desktop landing page */
+@media only screen and (min-width: 1025px) {
+
+  .characteristics__grid {
+    gap: .2rem;
+    width: 40rem;
+    font-size: 3rem;
+  }
+
+  .advertising, .displays {
+    width: 100%;
+  }
+
+  .characteristics__text {
+    width: 30rem;
+
+    & .characteristics__title {
+      font-size: 2rem;
+    }
+
+    & p {
+      width: 100%;
+    }
+  }
 }
 
 /* here an ::after as well for a line under title*/
@@ -381,14 +589,25 @@ img, source {
 /* what is nft css */
 
 .section__nft {
-  display: flex;
-  flex-direction: column;
+  height: 100vh;
+  width: 80vw;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr 2fr 1fr;
+  grid-auto-flow: row;
+  grid-template-areas:
+    'nft__quote'
+    'nft__title'
+    'nft__img'
+    'nft__text';
 
   & .nft__quote-mobile {
+    grid-area: nft__quote;
     font-size: 2rem;
     font-style: italic;
-    margin: 25vh auto 5vh;
-    /* text-align: center; */
+    margin: auto;
+    text-align: right;
     text-transform: uppercase;
   }
 
@@ -397,12 +616,29 @@ img, source {
   }
 
   & .nft__title {
-    margin-bottom: 10vh;
+    grid-area: nft__title;
+  }
+
+  & .nft__img {
+    grid-area: nft__img;
+    height: 30vh;
+    background-color: white;
+    margin: 0 auto;
+    width: 20rem;
+  }
+
+  & .nft__text-container {
+    grid-area: nft__text;
+    width: 30rem;
+    margin: 0 auto;
+  }
+
+  & .nft__text-title {
+    display: none;
   }
 
   & .nft__text {
-    width: 80vw;
-    margin: 0 auto;
+    font-size: var(--fontMedium);
   }
 }
 
@@ -422,35 +658,161 @@ img, source {
   tab-size: 16;
 } */
 
+/* Tablet */
+@media (min-width: 768px) and (max-width: 1024px) {
+
+  .section__nft {
+    width: 90vw;
+    grid-template-rows: 1fr 2fr 1fr;
+    grid-template-areas:
+      'nft__quote-desk'
+      'nft__img'
+      'nft__text';
+
+    & .nft__quote-mobile {
+      display: none;
+    }
+
+    & .nft__title {
+      display: none;
+    }
+
+    & .nft__quote-desktop {
+      grid-area: nft__quote-desk;
+      display: block;
+      text-align: right;
+      margin: 10vh auto;
+
+      & .nft__actual-quote {
+        font-size: var(--fontBig);
+        font-family: var(--font);
+        font-style: italic;
+        margin: 3vh auto;
+        text-decoration: underline;
+        text-decoration-color: red;
+        text-transform: uppercase;
+      }
+
+      & .quote__author {
+        font-size: 1rem;
+        text-decoration: none;
+      }
+
+      & .nft__img, .nft__text {
+        width: 30rem;
+      }
+    }
+  }
+
+  .nft__text > p {
+    font-size: var(--fontMedium);
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+
+  .section__nft {
+    width: 90vw;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 2fr;
+    grid-template-areas:
+      'nft__quote-desk nft__quote-desk'
+      'nft__img nft__text';
+
+    & .nft__img {
+      width: 20rem;
+      margin: auto;
+    }
+
+    & .nft__text-container {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      & .nft__text-title {
+        display: block;
+        color: var(--colorSecondary);
+        font-size: 2.5rem;
+        letter-spacing: .1rem;
+        line-height: 2.5rem;
+      }
+
+      & .nft__text {
+        width: 22rem;
+        margin: 2vh auto;
+      }
+    }
+  }
+}
+
 /* Desktop what is NFT? */
 @media only screen and (min-width: 1025px) {
 
-  .nft__quote-mobile {
-    display: none;
+  .section__nft {
+    height: 200vh;
+    width: 100vw;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas:
+      'nft__quote-desk nft__quote-desk'
+      'nft__img nft__text';
+
+    & .nft__quote-desktop {
+      grid-area: nft__quote-desk;
+      display: block;
+      text-align: right;
+      margin: 30vh auto;
+
+      & .nft__actual-quote {
+        font-size: 2.8rem;
+        font-family: var(--font);
+        font-style: italic;
+        margin: 3vh auto;
+        text-decoration: underline;
+        text-decoration-color: red;
+        text-transform: uppercase;
+      }
+
+      & .quote__author {
+        font-size: 1rem;
+        text-decoration: none;
+      }
+    }
+
+    & .nft__img {
+      width: 20rem;
+      height: 30rem;
+      margin: 0 auto;
+      /* margin-bottom: 40vh; */
+    }
+
+    & .nft__text-container {
+      display: flex;
+      flex-direction: column;
+      /* justify-content: center; */
+      align-items: center;
+      margin: 0 auto;
+      padding: 0 2.2rem;
+      width: 35rem;
+
+      & .nft__text-title {
+        display: block;
+        color: var(--colorSecondary);
+        font-size: 4rem;
+        letter-spacing: .1rem;
+      }
+
+      & .nft__text {
+        /* width: 22rem; */
+        font-size: var(--fontBig);
+        margin: 2vh auto;
+        line-height: 2rem;
+      }
+    }
   }
 
-  .nft__quote-desktop {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    font-style: italic;
-    width: 80vw;
-    margin: 45vh auto;
-    text-transform: uppercase;
-  }
-
-  .nft__quote-desktop > p {
-    font-size: 4rem;
-    width: 100%;
-    text-align: right;
-    margin: .2rem;
-  }
-
-  .nft__quote-desktop > .quote__author {
-    font-size: 1rem;
-  }
-
-  .nft__title {
+  .nft__quote-mobile, .nft__title {
     display: none;
   }
 }
@@ -702,7 +1064,7 @@ img, source {
     & h4 {
       font-size: var(--fontMedium);
       font-family: var(--fontText);
-      text-decoration: underline;
+      letter-spacing: .1rem;
     }
 
     & p {
