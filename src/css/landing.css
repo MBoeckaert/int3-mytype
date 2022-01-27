@@ -88,7 +88,7 @@ img, source {
 @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
 
   .landing-page {
-    background-image: url(../../assets/img/bgTablet.png);
+    background-image: url(../../assets/img/bgTabletportrait.png);
   }
 
   .landing-text {
@@ -96,6 +96,11 @@ img, source {
     & .landing__text-content {
       font-size: var(--fontMedium);
     }
+  }
+
+  img, source {
+    max-width: 65%;
+    margin-left: .2rem;
   }
 }
 
@@ -110,6 +115,7 @@ img, source {
     grid-template-areas:
       'land-txt land-img ';
     background-image: url(../../assets/img/bgDesktop.png);
+    background-position: 22rem;
   }
 
   .landing__img {
