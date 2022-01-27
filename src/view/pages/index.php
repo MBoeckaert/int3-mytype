@@ -18,9 +18,8 @@
 
   <div class="landing__text-bg">
     <div class="landing-text">
-      <p class="landing__text-content">This week in Slanted mini typography series: Clarendon. If Clarendon was invented today, it would
-        probably be released as an NFT. A digital
-        object circulating in the digital wild west.</p>
+      <?php echo $landing__textContent ?> <!-- this doesn't work: error 500 -->
+      <p class="landing__text-content">This week in Slanted mini typography series: Clarendon. If Clarendon was invented today, it would probably be released as an NFT. A digital object circulating in the digital wild west.</p>
       <div class="read-more">
         <p>read more</p>
         <i class="fas fa-chevron-down"></i>
