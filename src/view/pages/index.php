@@ -2,19 +2,19 @@
 <main class="landing-page">
   <div class="landing__img">
     <picture>
-      <source media="'(max-width: 767px)" srcset="../assets/img/clarendonMobile.png">
-      <source media="'(max-width: 1024px)" srcset="../assets/img/clarendonTablet.png">
-      <source media="'(min-width: 1025px)" srcset="../assets/img/clarendonDesktop.png">
+      <source media="(min-width: 1025px)"
+              srcset="../assets/img/clarendonDesktop.png"
+              sizes="40vw">
+      <source media="(min-width: 767px)" srcset="../assets/img/clarendonTablet.png">
       <img class="img__billboard" src="../assets/img/clarendonMobile.png" alt="clarendon billboard" > <!--  do i need width & height here? -->
     </picture>
     <picture>
-      <source media="'(max-width: 767px)" srcset="../assets/img/typefaceMobile.png">
-      <source media="'(max-width: 1024px)" srcset="../assets/img/typefaceTablet.png">
-      <source media="'(min-width: 1025px)" srcset="../assets/img/typefaceDesktop.png">
+        <source media="(min-width: 1025px)" srcset="../assets/img/typefaceDesktop.png">
+      <source media="(min-width: 767px)" srcset="../assets/img/typefaceTablet.png">
       <img class="img__billboard" src="../assets/img/typefaceMobile.png" alt="typeface billboard" > <!--  do i need width & height here? -->
     </picture>
   </div>
-<!-- <img class="img__billboard" src="../assets/img/clarendonDesktop.png" alt="clarendon billboard" > -->
+
   <div class="landing__text-bg">
     <div class="landing-text">
       <p class="landing__text-content">This week in Slanted mini typography series: Clarendon. If Clarendon was invented today, it would
