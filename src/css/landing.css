@@ -1,0 +1,160 @@
+
+/* landing page css */
+
+.landing-page {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 2fr 1fr;
+  grid-template-areas:
+    'land-img'
+    'land-txt';
+  background-image: url(../../assets/img/neonMobile.png);
+  background-repeat: no-repeat;
+  height: 100vh;
+  width: 100vw;
+}
+
+.landing__img {
+  grid-area: land-img;
+  height: 65vh;
+  /* width: 100vw; */
+  display: flex;
+  align-items: center;
+}
+
+img, source {
+  width: 100%;
+  height: auto;
+  /* margin: auto 5vh; */
+}
+
+.landing__text-bg {
+  grid-area: land-txt;
+  background-color: rgba(0, 0, 0, .5);
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  height: 35vh;
+  width: 100vw;
+}
+
+.landing-text {
+  /* min-height: 10vh; */
+  margin: auto;
+
+  & .landing__text-content {
+    width: 80vw;
+    margin: 5vh auto 0;
+    font-size: var(--fontRegular);
+  }
+
+  & .read-more {
+    margin: auto;
+    text-align: center;
+    color: var(--colorMain);
+  }
+}
+
+.read-more > p {
+  margin: 5vh auto .1rem;
+  font-size: var(--fontSmall);
+  text-transform: uppercase;
+}
+
+.read-more > i {
+  font-size: var(--fontSmall);
+}
+
+/* Tablet */
+@media (min-width: 768px) and (max-width: 1024px) {
+
+  .landing-page {
+    background-image: url(../../assets/img/neonTabletPortrait.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+
+  .landing-text {
+
+    & .landing__text-content {
+      font-size: var(--fontMedium);
+    }
+  }
+
+  .read-more > p {
+    font-size: var(--fontMedium);
+  }
+
+  .read-more > i {
+    font-size: var(--fontMedium);
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+
+  .landing-page {
+    background-image: url(../../assets/img/neonTablet.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+
+  .landing-text {
+
+    & .landing__text-content {
+      font-size: var(--fontMedium);
+    }
+  }
+}
+
+/* Desktop landing page */
+@media only screen and (min-width: 1025px) {
+
+  .landing-page {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 1fr;
+    grid-template-areas:
+      'land-txt land-img ';
+    background-image: url(../../assets/img/neonDesktop.png);
+    background-repeat: no-repeat;
+  }
+
+  .landing__img {
+    grid-area: land-img;
+    margin: auto;
+  }
+
+  .landing__text-bg {
+    grid-area: land-txt;
+    background-color: rgba(0, 0, 0, .5);
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 40vw;
+  }
+
+  .landing-text {
+    /* width: 35vw; */
+
+    & .landing__text-content {
+      width: 35vw;
+      margin-top: 40vh;
+      text-align: center;
+      font-size: var(--fontBig);
+      line-height: 2rem;
+    }
+  }
+
+  .read-more {
+    margin-top: 10vh;
+  }
+
+  .read-more > p {
+    font-size: var(--fontMedium);
+  }
+
+  .read-more > i {
+    font-size: var(--fontMedium);
+  }
+}
