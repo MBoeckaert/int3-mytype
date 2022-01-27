@@ -1,0 +1,231 @@
+
+/* what is nft css */
+
+.section__nft {
+  height: 100vh;
+  width: 80vw;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr 2fr 1fr;
+  grid-auto-flow: row;
+  grid-template-areas:
+    'nft__quote'
+    'nft__title'
+    'nft__img'
+    'nft__text';
+
+  & .nft__quote-mobile {
+    grid-area: nft__quote;
+    font-size: 2rem;
+    font-style: italic;
+    margin: auto;
+    text-align: right;
+    text-transform: uppercase;
+  }
+
+  & .nft__quote-desktop {
+    display: none;
+  }
+
+  & .nft__title {
+    grid-area: nft__title;
+  }
+
+  & .nft__img {
+    grid-area: nft__img;
+    height: 30vh;
+    background-color: white;
+    margin: 0 auto;
+    width: 20rem;
+  }
+
+  & .nft__text-container {
+    grid-area: nft__text;
+    width: 20rem;
+    margin: 0 auto;
+  }
+
+  & .nft__text-title {
+    display: none;
+  }
+
+  & .nft__text {
+    font-size: var(--fontMedium);
+  }
+}
+
+.nft__quote-mobile > p {
+  font-size: var(--fontBig);
+  margin: 0;
+  line-height: 2rem;
+}
+
+/* tabs not working? */
+
+/* .nft-tab1 {
+  tab-size: 2;
+}
+
+.nft-tab2 {
+  tab-size: 16;
+} */
+
+/* Tablet */
+@media (min-width: 768px) and (max-width: 1024px) {
+
+  .section__nft {
+    width: 90vw;
+    grid-template-rows: 1fr 2fr 1fr;
+    grid-template-areas:
+      'nft__quote-desk'
+      'nft__img'
+      'nft__text';
+
+    & .nft__quote-mobile {
+      display: none;
+    }
+
+    & .nft__title {
+      display: none;
+    }
+
+    & .nft__quote-desktop {
+      grid-area: nft__quote-desk;
+      display: block;
+      text-align: right;
+      margin: 10vh auto;
+
+      & .nft__actual-quote {
+        font-size: var(--fontBig);
+        font-family: var(--font);
+        font-style: italic;
+        margin: 3vh auto;
+        text-decoration: underline;
+        text-decoration-color: red;
+        text-transform: uppercase;
+      }
+
+      & .quote__author {
+        font-size: 1rem;
+        text-decoration: none;
+      }
+
+      & .nft__img, .nft__text {
+        width: 30rem;
+      }
+    }
+  }
+
+  .nft__text > p {
+    font-size: var(--fontMedium);
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+
+  .section__nft {
+    width: 90vw;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 2fr;
+    grid-template-areas:
+      'nft__quote-desk nft__quote-desk'
+      'nft__img nft__text';
+
+    & .nft__img {
+      width: 20rem;
+      margin: auto;
+    }
+
+    & .nft__text-container {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      & .nft__text-title {
+        display: block;
+        color: var(--colorSecondary);
+        font-size: 2.5rem;
+        letter-spacing: .1rem;
+        line-height: 2.5rem;
+      }
+
+      & .nft__text {
+        width: 22rem;
+        margin: 2vh auto;
+      }
+    }
+  }
+}
+
+/* Desktop what is NFT? */
+@media only screen and (min-width: 1025px) {
+
+  .section__nft {
+    height: 150vh;
+    width: 100vw;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas:
+      'nft__quote-desk nft__quote-desk'
+      'nft__img nft__text';
+
+    & .nft__quote-desktop {
+      grid-area: nft__quote-desk;
+      display: block;
+      text-align: right;
+      margin: 30vh auto;
+
+      & .nft__actual-quote {
+        font-size: 2.6rem;
+        font-family: var(--font);
+        font-style: italic;
+        margin: 3vh auto;
+        text-decoration: underline;
+        text-decoration-color: red;
+        text-transform: uppercase;
+      }
+
+      & .quote__author {
+        font-size: 1rem;
+        text-decoration: none;
+      }
+    }
+
+    & .nft__img {
+      width: 20rem;
+      height: 30rem;
+      margin: 0 auto;
+      /* margin-bottom: 40vh; */
+    }
+
+    & .nft__text-container {
+      display: flex;
+      flex-direction: column;
+      /* justify-content: center; */
+      align-items: center;
+      margin: 0 auto;
+      padding: 0 2.2rem;
+      width: 35rem;
+
+      & .nft__text-title {
+        display: block;
+        color: var(--colorSecondary);
+        font-size: 4rem;
+        letter-spacing: .1rem;
+      }
+
+      & .nft__text {
+        /* width: 22rem; */
+        font-size: var(--fontBig);
+        margin: 2vh auto;
+        line-height: 2rem;
+      }
+    }
+  }
+
+  .nft__quote-mobile, .nft__title {
+    display: none;
+  }
+}
