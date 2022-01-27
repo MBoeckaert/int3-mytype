@@ -14,6 +14,10 @@
   width: 100vw;
 }
 
+.creator__r-container {
+  display: none;
+}
+
 .creator__lines {
   height: 2vh;
   width: 100vw;
