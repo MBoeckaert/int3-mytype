@@ -5,13 +5,14 @@
       <source media="(min-width: 1025px)"
               srcset="../assets/img/clarendonDesktop.png"
               sizes="40vw">
-      <source media="(min-width: 767px)" srcset="../assets/img/clarendonTablet.png">
-      <img class="img__billboard" src="../assets/img/clarendonMobile.png" alt="clarendon billboard" > <!--  do i need width & height here? -->
+      <source media="(min-width: 767px)"
+              srcset="../assets/img/clarendonTablet.png">
+      <img class="img__billboard" src="../assets/img/clarendonMobile.png" alt="clarendon billboard" >
     </picture>
     <picture>
         <source media="(min-width: 1025px)" srcset="../assets/img/typefaceDesktop.png">
       <source media="(min-width: 767px)" srcset="../assets/img/typefaceTablet.png">
-      <img class="img__billboard" src="../assets/img/typefaceMobile.png" alt="typeface billboard" > <!--  do i need width & height here? -->
+      <img class="img__billboard" src="../assets/img/typefaceMobile.png" alt="typeface billboard" >
     </picture>
   </div>
 
@@ -33,6 +34,14 @@
 <div class="creator__lines"></div>
 
 <section class="section__creator">
+  <div class="creator__r-container">
+    <picture>
+      <source media="(min-width: 1025px)"
+              srcset="../assets/img/capitalR.png"
+              sizes="40vw">
+      <img class="img__capital-r" src="../assets/img/capitalR.png" alt="capital letter R" >
+    </picture>
+  </div>
   <div class="creator__title">
     <h1>Robert Besley</h1>
     <p>creator of</p>
@@ -107,7 +116,16 @@
 
   <!-- another grid here -->
   <div class="why__reasons">
-    <p class="reasons__img">Here comes an img</p>
+    <div class="picture__container">
+      <picture>
+        <source media="(min-width: 1025px)"
+                srcset="../assets/img/clarendonNFT.png"
+                sizes="40vw">
+        <source media="(min-width: 767px)" srcset="../assets/img/clarendonNFTmobile.png">
+        <img class="reasons__img" src="../assets/img/clarendonNFTmobile.png" alt="clarendon billboard" > <!--  do i need width & height here? -->
+      </picture>
+    </div>
+    <!-- <p class="reasons__img">Here comes an img</p> -->
     <!-- Make it a lsit -->
     <p class="reasons__n1">The Clarendon design was immediately after creation
     very  popular and rapidly <span class="orange">copied</span> by other foundries.
