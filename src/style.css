@@ -88,3 +88,12 @@ p {
 .uppercase {
   text-transform: uppercase;
 }
+
+.underline {
+  text-decoration: underline;
+}
+
+.border-bottom {
+  border-bottom: .2rem solid var(--colorSecondary);
+  padding-bottom: 1rem;
+}

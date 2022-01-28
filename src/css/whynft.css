@@ -21,15 +21,25 @@
 
   /* again ::before & ::after for line */
 
-  & .clarendon {
-    grid-area: clarendon;
-    color: var(--colorSecondary);
-    font-size: 1rem;
-    margin: auto;
-    font-weight: bold;
-  }
-
   & .as-nft { grid-area: as-nft; }
+}
+
+.clarendon {
+  grid-area: clarendon;
+  color: var(--colorSecondary);
+  font-size: 1rem;
+  margin: auto;
+  font-weight: bold;
+  width: 100%;
+}
+
+.clarendon::before, .clarendon::after {
+  display: inline-block;
+  content: '';
+  height: .2rem;
+  width: 25%;
+  background: var(--colorSecondary);
+  margin: .4rem 1rem;
 }
 
 .why__reasons {

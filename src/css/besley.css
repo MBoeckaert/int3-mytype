@@ -74,7 +74,7 @@
   width: 100vw;
   border-top: .3rem solid var(--colorSecondary);
   border-bottom: .3rem solid var(--colorSecondary);
-  /* overflow: hidden; */
+  overflow: hidden;
   display: flex;
   align-items: center;
 }
