@@ -5,7 +5,7 @@
   grid-template-areas:
     'land-img'
     'land-txt';
-  background-image: url(../../assets/img/bgMobile.png);
+  background-image: url(../assets/img/bgMobile.png);
   background-repeat: no-repeat;
   background-size: cover;
   height: 100vh;
@@ -65,7 +65,7 @@ img, source {
 @media (min-width: 768px) and (max-width: 1024px) {
 
   .landing-page {
-    background-image: url(../../assets/img/bgTablet.png);
+    background-image: url(../assets/img/bgTablet.png);
   }
 
   .landing-text {
@@ -88,7 +88,7 @@ img, source {
 @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
 
   .landing-page {
-    background-image: url(../../assets/img/bgTabletportrait.png);
+    background-image: url(../assets/img/bgTabletportrait.png);
   }
 
   .landing-text {
@@ -114,7 +114,7 @@ img, source {
     grid-gap: 2vw;
     grid-template-areas:
       'land-txt land-img ';
-    background-image: url(../../assets/img/bgDesktop.png);
+    background-image: url(../assets/img/bgDesktop.png);
     background-position: 22rem;
   }
 
