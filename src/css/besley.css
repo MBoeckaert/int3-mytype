@@ -71,19 +71,50 @@
   grid-area: creator__banner;
   align-self: flex-end;
   height: 7vh;
-  /* margin: 0 auto 2vh; */
+  width: 100vw;
   border-top: .3rem solid var(--colorSecondary);
   border-bottom: .3rem solid var(--colorSecondary);
+  /* overflow: hidden; */
   display: flex;
   align-items: center;
+}
 
-  & .banner__content {
-    height: 5vh;
-    width: 100vw;
-    font-size: 1.5rem;
-    overflow-x: scroll;
-    white-space: nowrap;
-    padding: 1vh;
+.scroll-holder {
+  display: flex;
+  flex-direction: row;
+  white-space: nowrap;
+  width: 200%;
+}
+
+.scroll {
+  width: 50%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  white-space: nowrap;
+}
+
+.banner__content {
+  height: 5vh;
+  font-size: 1.5rem;
+  animation: banner 20s linear infinite;
+  font-family: var(--font);
+  text-transform: uppercase;
+  padding: 1vh 0;
+}
+
+.space::after {
+  content: '\00a0';
+}
+
+@keyframes banner {
+
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(-100%);
   }
 }
 
