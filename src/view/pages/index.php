@@ -55,7 +55,22 @@
   </p>
   <p class="creator__registered uppercase">the first <br>registered typeface.</p>
   <div class="creator__banner">
-    <p class="banner__content"> a b c d e f g h i j k l m n o p q r s t u v w x y z a b c d e f g h I j k l m n o p q r s t u v  w x y z 1 2 3 4 5 6 7 8 9 0</p>
+    <div class="scroll-holder">
+      <div class="scroll">
+        <p class="banner__content"> a b c d e f g h i j k l m n o p q r s t u v w x y <span class="space">z</span></p>
+        <p class="banner__content"> a b c d e f g h i j k l m n o p q r s t u v w x y <span class="space">z</span></p>
+        <p class="banner__content"> a b c d e f g h i j k l m n o p q r s t u v w x y <span class="space">z</span></p>
+        <p class="banner__content"> a b c d e f g h i j k l m n o p q r s t u v w x y <span class="space">z</span></p>
+        <p class="banner__content"> a b c d e f g h i j k l m n o p q r s t u v w x y <span class="space">z</span></p>
+      </div>
+      <div class="scroll">
+        <p class="banner__content"> a b c d e f g h I j k l m n o p q r s t u v w x y z <span class="space">z</span></p>
+        <p class="banner__content"> a b c d e f g h i j k l m n o p q r s t u v w x y z <span class="space">z</span></p>
+        <p class="banner__content"> a b c d e f g h i j k l m n o p q r s t u v w x y z <span class="space">z</span></p>
+        <p class="banner__content"> a b c d e f g h i j k l m n o p q r s t u v w x y z <span class="space">z</span></p>
+        <p class="banner__content"> a b c d e f g h i j k l m n o p q r s t u v w x y z <span class="space">z</span></p>
+      </div>
+    </div>
   </div>
 </section>
 
