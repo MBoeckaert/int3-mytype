@@ -106,21 +106,28 @@
 <!-- what is NFT section -->
 <section class="section__nft">
   <div class="nft__quote-mobile">
-    <p class="nft-tab">if clarendon was </p>
-    <p class="nft-tab1">  released   today,</p>
-    <p class="nft-tab2">  it would be an </p>
+    <div class="nft__text-mobile">
+      <p class="nft-tab">if clarendon was </p>
+      <p class="nft-tab1">  released   today,</p>
+      <p class="nft-tab2">  it would be an </p>
+    </div>
+    <h3 class="nft__title">nft?!</h3>
   </div>
   <div class="nft__quote-desktop">
     <p class="nft__actual-quote">"If clarendon was released today, </p>
     <p class="nft__actual-quote"> it would be an nft"</p>
     <p class="quote__author">- Boeckaert M.</p>
   </div>
-  <h3 class="nft__title">nft?!</h3>
-  <p class="nft__img">img</p>
-  <div class="nft__text-container">
-    <h2 class="nft__text-title">What is <br><span class="underline">an nft?</span> </h2>
-    <p class="nft__text">NFT stands for <span class="orange">Non-Fungible Token</span>. It is a digital art piece or a digital version of a physical artwork and is uploaded on the blockchain, a big excel file on the internet. It certifies a digital asset is therefore not interchangeable, it also gives image rights and ownership back to the creators. But keep in mind that NFT's aren't that environmental friendly.
-    </p>
+
+  <div class="creator__lines"></div>
+
+  <div class="nft__container">
+    <p class="nft__img">img</p>
+    <div class="nft__text-container">
+      <h2 class="nft__text-title">What is <br><span>an nft?</span> </h2>
+      <p class="nft__text">NFT stands for <span class="orange">Non-Fungible Token</span>. It is a digital art piece or a digital version of a physical artwork and is uploaded on the blockchain, a big excel file on the internet. It certifies a digital asset is therefore not interchangeable, it also gives image rights and ownership back to the creators. But keep in mind that NFT's aren't that environmental friendly.
+      </p>
+    </div>
   </div>
 </section>
 <!-- why an NFT section -->

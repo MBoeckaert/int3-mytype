@@ -11,13 +11,14 @@
     'advertising advertising'
     'announcements announcements'
     'displays displays';
-  width: 60vw;
+  width: 80vw;
   height: 30vh;
   margin: 20vh auto;
   color: var(--colorSecondary);
   text-transform: uppercase;
   text-align: center;
   font-size: 2rem;
+  font-weight: bold;
 }
 
 .grid__top-left {
@@ -27,6 +28,14 @@
 
 .grid__top-right {
   grid-area: right;
+}
+
+.grid__top-right, .grid__top-left {
+  height: 12vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 1vh;
 }
 
 .bold, .face, .softer {
@@ -53,7 +62,7 @@
   grid-area: advertising;
   display: flex;
   justify-content: space-between;
-  width: 80%;
+  width: 90%;
   margin: 0 auto;
 }
 
@@ -66,7 +75,7 @@
   grid-area: displays;
   display: flex;
   justify-content: space-between;
-  width: 80%;
+  width: 90%;
   margin: 0 auto;
 }
 
@@ -99,8 +108,12 @@
   .characteristics__grid {
     gap: .5rem;
     height: 40vh;
-    width: 35rem;
+    width: 80vw;
     font-size: 3rem;
+  }
+
+  .grid__top-right, .grid__top-left {
+    height: 15vh;
   }
 
   .for::before, .for::after {
@@ -155,9 +168,17 @@
 
   .characteristics__grid {
     /* gap: .2rem; */
-    width: 35rem;
-    height: 40vh;
-    font-size: 3rem;
+    width: 45rem;
+    height: 45vh;
+    font-size: 4rem;
+  }
+
+  .grid__top-right, .grid__top-left {
+    height: 20vh;
+  }
+
+  .for {
+    font-size: 2rem;
   }
 
   .for::before, .for::after {
