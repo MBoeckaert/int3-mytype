@@ -29,7 +29,6 @@
 </main>
 
 <!-- section abt Besley -->
-
 <div class="creator__lines"></div>
 
 <section class="section__creator">

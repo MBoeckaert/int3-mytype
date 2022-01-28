@@ -236,7 +236,7 @@
         /* width: 22rem; */
         font-size: var(--fontBig);
         margin: 2vh auto;
-        line-height: 2rem;
+        line-height: 1.4;
       }
     }
   }

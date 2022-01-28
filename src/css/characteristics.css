@@ -6,9 +6,6 @@
   grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
   grid-auto-flow: row;
   grid-template-areas:
-    /* 'bold with'
-    'display softer'
-    'face side' */
     'left right'
     'for for'
     'advertising advertising'
@@ -32,15 +29,7 @@
   grid-area: right;
 }
 
-.bold {
-  color: var(--colorMain);
-}
-
-.face {
-  color: var(--colorMain);
-}
-
-.softer {
+.bold, .face, .softer {
   color: var(--colorMain);
 }
 
@@ -55,7 +44,7 @@
   display: inline-block;
   content: '';
   height: .2rem;
-  width: 35%;
+  width: 25%;
   background: var(--colorSecondary);
   margin: .2rem 1rem;
 }
