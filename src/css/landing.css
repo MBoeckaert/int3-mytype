@@ -7,6 +7,7 @@
     'land-txt';
   background-image: url(../assets/img/bgMobile.png);
   background-repeat: no-repeat;
+  background-attachment: fixed;
   background-size: cover;
   height: 100vh;
   width: 100vw;
@@ -17,12 +18,6 @@
   height: 65vh;
   display: flex;
   align-items: center;
-}
-
-img, source {
-  max-width: 80%;
-  height: auto;
-  margin: 0;
 }
 
 .landing__text-bg {
@@ -97,11 +92,6 @@ img, source {
       font-size: var(--fontMedium);
     }
   }
-
-  img, source {
-    max-width: 65%;
-    margin-left: .2rem;
-  }
 }
 
 /* Desktop */
@@ -139,6 +129,11 @@ img, source {
       font-size: var(--fontBig);
       line-height: 2rem;
     }
+  }
+
+  img, source {
+    max-width: 80%;
+    margin-left: .2rem;
   }
 
   .read-more {

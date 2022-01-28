@@ -19,9 +19,9 @@
   <div class="landing__text-bg">
     <div class="landing-text">
       <?php echo $landing__textContent ?> <!-- this doesn't work: error 500 -->
-      <p class="landing__text-content">This week in Slanted mini typography series: Clarendon. If Clarendon was invented today, it would probably be released as an NFT. A digital object circulating in the digital wild west.</p>
+      <!-- <p class="landing__text-content">This week in Slanted mini typography series: Clarendon. If Clarendon was invented today, it would probably be released as an NFT. A digital object circulating in the digital wild west.</p> -->
       <div class="read-more">
-        <p>read more</p>
+        <p>scroll to read</p>
         <i class="fas fa-chevron-down"></i>
       </div>
     </div>
@@ -78,12 +78,16 @@
 
 <section class="section__characteristics">
   <div class="characteristics__grid">
-    <div class="bold">bold</div>
-    <div class="display">display</div>
-    <div class="face">face</div>
-    <div class="with">with a</div>
-    <div class="softer">softer</div>
-    <div class="side">side</div>
+    <div class="grid__top-left">
+      <div class="bold">bold</div>
+      <div class="display">display</div>
+      <div class="face">face</div>
+    </div>
+    <div class="grid__top-right">
+      <div class="with">with a</div>
+      <div class="softer">softer</div>
+      <div class="side">side</div>
+    </div>
     <div class="for">for</div>
     <div class="advertising"><i class="fab fa-ethereum colorMain"></i> advertising <i class="fab fa-ethereum"></i></div>
     <div class="announcements">announcements</i></div>
@@ -91,7 +95,7 @@
   </div>
 
   <div class="characteristics__text">
-    <h2 class="characteristics__title">The first type<br> designed to be bold</h2>
+    <h2 class="characteristics__title">The first type<br> <span class="border-bottom">designed to be bold</span></h2>
     <p>Clarendon is an English Slab-Serif. The strokes are fairly heavy of thick and thin weight contrast rather than a unfiform stroke. Characters such as f, a, e and g have a <span class="orange">rounded serif</span>, in which is based on the roman model unlike the rest which is based on the Egyptian bold style.</p>
     <p class="characteristics__img">img</p>
     <p> However, the squared serif are not as thick as most of the Egyptian style but rather have <span class="orange">subtle brackets</span>. Because of the bracketed serifs and the contrast in weights, it becomes a "problem as stroke become thinner it limits how tight the typeface can go (Velazquez).</p>
@@ -115,7 +119,7 @@
   <h3 class="nft__title">nft?!</h3>
   <p class="nft__img">img</p>
   <div class="nft__text-container">
-    <h2 class="nft__text-title">What is <br>an nft?</h2>
+    <h2 class="nft__text-title">What is <br><span class="underline">an nft?</span> </h2>
     <p class="nft__text">NFT stands for <span class="orange">Non-Fungible Token</span>. It is a digital art piece or a digital version of a physical artwork and is uploaded on the blockchain, a big excel file on the internet. It certifies a digital asset is therefore not interchangeable, it also gives image rights and ownership back to the creators. But keep in mind that NFT's aren't that environmental friendly.
     </p>
   </div>

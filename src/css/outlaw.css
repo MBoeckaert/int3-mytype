@@ -99,7 +99,7 @@
   text-transform: uppercase;
   font-size: var(--fontMedium);
   text-align: center;
-  margin: 0;
+  margin: auto;
 }
 
 .wanted__reward-amount {
