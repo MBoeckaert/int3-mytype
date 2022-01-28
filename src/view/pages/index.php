@@ -138,7 +138,6 @@
     <div class="as-nft">as nft?</div>
   </div>
 
-  <!-- another grid here -->
   <div class="why__reasons">
     <div class="picture__container">
       <picture>
@@ -149,17 +148,18 @@
         <img class="reasons__img" src="assets/img/clarendonNFTmobile.png" alt="clarendon billboard" > <!--  do i need width & height here? -->
       </picture>
     </div>
-    <!-- <p class="reasons__img">Here comes an img</p> -->
-    <!-- Make it a lsit -->
-    <p class="reasons__n1">The Clarendon design was immediately after creation
+
+    <ol>
+      <li>The Clarendon design was immediately after creation
     very  popular and rapidly <span class="orange">copied</span> by other foundries.
-    Thanks to the blockain, the original can be easily found.</p>
-    <p class="reasons__n2">Best known as the font of the <span class="orange">lawless</span> Wild West era. The
+    Thanks to the blockain, the original can be easily found.</li>
+      <li>Best known as the font of the <span class="orange">lawless</span> Wild West era. The
     crypto landscape is still in it's infancy and governments
-    are still figuring out how they can regulate this space.</p>
-    <p class="reasons__n3"><span class="orange">Robberies & the gold rush</span> were also characteristic for the
+    are still figuring out how they can regulate this space.</li>
+      <li><span class="orange">Robberies & the gold rush</span> were also characteristic for the
     Wild West. The same is happening with NFT's where big
-    money goes around & many scammers are lurking around.</p>
+    money goes around & many scammers are lurking around.</li>
+    </ol>
   </div>
 </section>
 
