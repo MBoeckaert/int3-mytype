@@ -100,6 +100,7 @@
 .characteristics__text > p {
   margin: 1vh auto;
   width: 80vw;
+  line-height: 1.2;
 }
 
 /* Tablet */
@@ -134,6 +135,7 @@
     & p {
       width: 100%;
       font-size: var(--fontMedium);
+      line-height: 1.4;
     }
   }
 }
@@ -204,9 +206,7 @@
     & p {
       width: 100%;
       font-size: var(--fontBig);
-      line-height: 2rem;
+      line-height: 1.6;
     }
   }
 }
-
-/* here an ::after as well for a line under title*/

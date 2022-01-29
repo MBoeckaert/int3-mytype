@@ -1,7 +1,7 @@
 /* Bounty section */
 
 .section__bounty {
-  margin-top: 20vh;
+  margin: 15vh auto;
 }
 
 .bounty__board {
@@ -21,7 +21,7 @@
       width: 90%;
       background-color: white;
       height: 80%;
-      margin: 3vh auto;
+      margin: 3vh auto 0;
     }
 
     & .wanted__craw {

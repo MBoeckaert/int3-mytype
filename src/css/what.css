@@ -119,6 +119,7 @@
 
   .nft__text > p {
     font-size: var(--fontMedium);
+    line-height: 1.4;
   }
 }
 
@@ -157,7 +158,6 @@
       text-decoration: underline;
     }
   }
-
 }
 
 /* Desktop what is NFT? */
@@ -245,7 +245,7 @@
   .nft__text {
     font-size: var(--fontBig);
     margin: 2vh auto;
-    line-height: 1.4;
+    line-height: 1.6;
   }
 
   .nft__quote-mobile, .nft__title {
