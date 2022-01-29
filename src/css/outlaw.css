@@ -2,7 +2,7 @@
 
 .outlaws__title {
   width: 80vw;
-  margin: 20vh auto;
+  margin: 20vh auto 10vh;
 }
 
 .outlaws__title > p {
@@ -22,7 +22,6 @@
 
 .outlaws__wanted-poster {
   margin: 0 auto;
-  /* height: 100vh; */
 }
 
 .h2__western {
@@ -34,15 +33,15 @@
   border-top: .2rem solid var(--colorMain);
   border-bottom: .2rem solid var(--colorMain);
   display: grid;
-  grid-template-columns: repeat(6, 1fr);
-  grid-template-rows: 1fr 1fr .5fr 1fr 1fr;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr .5fr .5fr 1fr;
   grid-auto-flow: row;
   grid-template-areas:
-    'doa doa doa doa doa doa'
-    'wanted__img wanted__img wanted__img wanted__img wanted__img wanted__img'
-    'craw craw consort consort roman roman'
-    'wanted__clarendon wanted__clarendon wanted__clarendon wanted__clarendon wanted__clarendon wanted__clarendon'
-    '. wanted__reward wanted__reward reward__amount reward__amount .';
+    'doa'
+    'wanted__img'
+    'wanted__fonts'
+    'wanted__clarendon'
+    'wanted__reward';
   width: 80vw;
   height: 60vh;
   margin: auto;
@@ -65,23 +64,14 @@
   background-color: white;
 }
 
-.wanted__craw {
-  grid-area: craw;
-}
-
-.wanted__consort {
-  grid-area: consort;
-}
-
-.wanted__roman {
-  grid-area: roman;
-}
-
-.wanted__craw, .wanted__consort, .wanted__roman {
-  font-size: var(--fontRegular);
-  text-align: center;
+.wanted__fonts {
+  grid-area: wanted__fonts;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 100%;
   color: var(--colorSecondary);
-  margin: auto;
+  font-size: var(--fontRegular);
 }
 
 .wanted__clarendon {
@@ -97,15 +87,10 @@
   grid-area: wanted__reward;
   color: var(--colorMain);
   text-transform: uppercase;
-  font-size: var(--fontMedium);
+  font-size: var(--fontBig);
+  font-weight: bold;
   text-align: center;
   margin: auto;
-}
-
-.wanted__reward-amount {
-  grid-area: reward__amount;
-  margin: 0;
-  color: var(--colorMain);
 }
 
 /* Tablet */
@@ -137,10 +122,6 @@
       font-size: var(--fontMedium);
     }
 
-    & .wanted__reward-amount {
-      font-size: 2rem;
-    }
-
     & .wanted__reward {
       font-size: 2rem;
     }
@@ -165,22 +146,28 @@
   .outlaws__wanted-poster {
 
     & .wanted-poster__content {
-      height: 80vh;
+      height: 90vh;
     }
 
     & .wanted__img {
       margin-bottom: 1vh;
       height: 40vh;
-      width: 50rem;
+      width: 40rem;
     }
 
     & .wanted__doa {
       font-size: 3rem;
     }
 
+    & .wanted__fonts {
+      width: 40rem;
+      margin: 0 auto;
+      justify-content: space-between;
+    }
+
     & .wanted__clarendon {
       font-size: 3rem;
-      margin: 5vh;
+      /* margin: 5vh; */
     }
 
     & p {

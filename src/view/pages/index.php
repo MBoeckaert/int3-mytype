@@ -176,14 +176,14 @@
       <div class="wanted-poster__content">
         <h4 class="wanted__doa">Dead or Alive</h4>
         <p class="wanted__img">here comes the img</p>
-        <p class="wanted__craw">Craw</p>
-        <p class="wanted__consort">Consort</p>
-        <p class="wanted__roman">Roman</p>
+        <div class="wanted__fonts">
+          <p class="wanted__craw">Craw</p>
+          <p class="wanted__consort">Consort</p>
+          <p class="wanted__roman">Roman</p>
+        </div>
         <h4 class="wanted__clarendon">Clarendon</h4>
-        <p class="wanted__reward">reward:</p>
-        <p class="wanted__reward-amount">
-          <i class="fab fa-ethereum"></i>210 <span class="small">(€900,453)</span>
-        </p>
+          <p class="wanted__reward">reward: <i class="fab fa-ethereum"></i> 210 <span class="small">(€900,453)</span></p>
+        </div>
       </div>
     </div>
   </div>
