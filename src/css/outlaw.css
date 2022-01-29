@@ -30,6 +30,7 @@
 }
 
 .wanted-poster__content {
+  position: relative;
   border-top: .2rem solid var(--colorMain);
   border-bottom: .2rem solid var(--colorMain);
   display: grid;
@@ -45,6 +46,19 @@
   width: 80vw;
   height: 60vh;
   margin: auto;
+
+  & .oval {
+    position: absolute;
+    top: 9vh;
+    left: 10vw;
+    width: 61vw;
+    height: 30vh;
+    background-color: var(--colorPurple);
+    opacity: .7;
+    filter: blur(1.5rem);
+    border-radius: 50%;
+    z-index: -1;
+  }
 }
 
 .wanted__doa {
@@ -147,6 +161,11 @@
 
     & .wanted-poster__content {
       height: 90vh;
+
+      & .oval {
+        top: 23vh;
+        filter: blur(10.5rem);
+      }
     }
 
     & .wanted__img {

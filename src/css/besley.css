@@ -84,6 +84,8 @@
   flex-direction: row;
   white-space: nowrap;
   width: 200%;
+  background-color: var(--colorBg);
+  z-index: 10;
 }
 
 .scroll {

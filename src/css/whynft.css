@@ -1,6 +1,21 @@
 
 /* Why NFT section */
 
+.section__why {
+  position: relative;
+}
+
+.oval {
+  position: absolute;
+  top: 0;
+  width: 100vw;
+  height: 30vh;
+  background-color: #2fc4d9;
+  filter: blur(12.5rem);
+  border-radius: 50%;
+  z-index: -1;
+}
+
 .nft-why__grid {
   display: grid;
   grid-template-columns: 1fr;
@@ -26,7 +41,7 @@
 
 .clarendon {
   grid-area: clarendon;
-  color: var(--colorSecondary);
+  color: var(--colorMain);
   font-size: 1rem;
   margin: auto;
   font-weight: bold;

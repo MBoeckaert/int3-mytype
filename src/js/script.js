@@ -1,3 +1,16 @@
+export const init = () => {
+  console.log('start executing this JavaScript');
+  testingGSAP();
+
+  // console.log(bountyGame);
+  cardGenerator();
+};
+
+const testingGSAP = () => {
+  console.log('i am working');
+  gsap.to('.img__billboard', {duration: 2, x: 100});
+};
+
 const bountyGame = document.querySelector('.board__game');
 
 const getData = () => [
@@ -26,17 +39,17 @@ const cardGenerator = () => {
   //html
   cardData.forEach(item => {
     const card = document.createElement('div');
-    const face = document.createElement('img');
+    const front = document.createElement('img');
     const back = document.createElement('div');
     card.classList = 'card';
-    face.classList = 'face';
+    front.classList = 'front';
     back.classList = 'back';
     //attach info to cards
-    face.src = item.imgSrc;
+    front.src = item.imgSrc;
     card.setAttribute('name', item.name);
     //attach cards to bountyGame
     bountyGame.appendChild(card);
-    card.appendChild(face);
+    card.appendChild(front);
     card.appendChild(back);
     console.log(card);
 
@@ -81,14 +94,4 @@ const checkCards = e => {
     gameText.textContent = 'they got away, try again';
   }
   //}
-};
-
-
-
-export const init = () => {
-  console.log('start executing this JavaScript');
-  // testingGSAP();
-
-  // console.log(bountyGame);
-  cardGenerator();
 };

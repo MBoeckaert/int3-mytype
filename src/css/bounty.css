@@ -5,31 +5,36 @@
 }
 
 .bounty__board {
-  height: 90vh;
+  height: 50vh;
   width: 90vw;
   margin: auto;
+  padding: 5vh 0;
   border: .2rem solid var(--colorMain);
   border-radius: .5rem;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
-  background-color: tomato;
+
+  & .board__rules {
+    font-family: var(--font);
+  }
 }
 
 .board__game {
-  width: 50vw;
-  height: 50vh;
+  width: 90%;
+  height: 90%;
   margin: auto;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(3, 1fr);
-  grid-gap: 2rem;
+  grid-gap: 1rem;
   perspective: 800px;
 }
 
 .game__text {
-  font-size: var(--fontBig);
+  font-size: var(--fontRegular);
+  text-transform: uppercase;
   font-family: var(--font);
   font-weight: bold;
 }
@@ -38,9 +43,11 @@
   position: relative;
   transform: scale(1);
   transform-style: preserve-3d;
+  border-radius: 1rem;
+  /* background-color: turquoise; */
 }
 
-.face,
+.front,
 .back {
   width: 100%;
   height: 100%;
@@ -48,13 +55,14 @@
   pointer-events: none;
 }
 
-.face {
+.front {
   transform: rotateY(-180deg);
 }
 
 .back {
-  background: white;
+  border-radius: 1rem;
   backface-visibility: hidden;
+  background-color: var(--colorSecondary);
 }
 
 .toggleCard {
@@ -65,20 +73,32 @@
 @media (min-width: 768px) and (max-width: 1024px) {
 
   .bounty__board {
+    height: 70vh;
 
-    & .wanted__craw {
-      font-size: 2rem;
+    & .board__rules {
+      font-size: var(--fontMedium);
     }
   }
 }
 
 /* Desktop */
-/* @media only screen and (min-width: 1025px) {
+@media only screen and (min-width: 1025px) {
 
   .bounty__board {
+    height: 90vh;
 
-    & .wanted__craw {
-      font-size: 3rem;
+    & .board__rules {
+      font-size: var(--fontBig);
     }
   }
-} */
+
+  .board__game {
+    width: 80%;
+    height: 90%;
+    grid-gap: 2rem;
+  }
+
+  .game__text {
+    font-size: var(--fontMedium);
+  }
+}

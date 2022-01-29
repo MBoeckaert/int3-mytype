@@ -1,5 +1,22 @@
 /* Characteristics css */
 
+.section__characteristics {
+  position: relative;
+}
+
+.semi-oval {
+  position: absolute;
+  top: -20vh;
+  width: 100vw;
+  height: 10vh;
+  filter: blur(3.5rem);
+  background-color: var(--colorSecondary);
+  border-radius: 50% / 100%;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+  transform: rotate(180deg);
+}
+
 .characteristics__grid {
   display: grid;
   grid-template-columns: 1fr 1fr;

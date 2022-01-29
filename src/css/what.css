@@ -27,7 +27,33 @@
 }
 
 .nft__quote-desktop {
+  position: relative;
   display: none;
+  height: 50vh;
+
+  & .vertical-oval {
+    position: absolute;
+    top: 0;
+    height: 10vh;
+    width: 50vw;
+    margin-top: 30vh;
+    filter: blur(7.5rem);
+    background-color: var(--colorPurple);
+    border-radius: 50% / 100%;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    z-index: -1;
+  }
+
+  & .oval-left {
+    left: -28vw;
+    transform: rotate(90deg);
+  }
+
+  & .oval-right {
+    right: -28vw;
+    transform: rotate(-90deg);
+  }
 }
 
 .nft__container {
@@ -73,6 +99,10 @@
     flex-direction: column;
     justify-content: center;
     align-items: flex-end;
+
+    & .vertical-oval {
+      top: -10vh;
+    }
 
     & .nft__actual-quote {
       font-size: 1.75rem;

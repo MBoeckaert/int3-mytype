@@ -76,6 +76,7 @@
 <!-- section abt characteristics -->
 
 <section class="section__characteristics">
+  <div class="semi-oval"></div>
   <div class="characteristics__grid">
     <div class="grid__top-left">
       <div class="bold">bold</div>
@@ -114,9 +115,11 @@
     <h3 class="nft__title">nft?!</h3>
   </div>
   <div class="nft__quote-desktop">
+    <div class="vertical-oval oval-left"></div>
     <p class="nft__actual-quote">"If clarendon was released today, </p>
     <p class="nft__actual-quote"> it would be an nft"</p>
     <p class="quote__author">- Boeckaert M.</p>
+    <div class="vertical-oval oval-right"></div>
   </div>
 
   <div class="creator__lines"></div>
@@ -132,6 +135,7 @@
 </section>
 <!-- why an NFT section -->
 <section class="section__why">
+  <div class="oval"></div>
   <div class="nft-why__grid">
     <div class="why">why</div>
     <div class="clarendon">clarendon</div>
@@ -174,6 +178,7 @@
     <h2 class="h2__western">wanted</h2>
     <div class="wanted__poster-border">
       <div class="wanted-poster__content">
+        <div class="oval"></div>
         <h4 class="wanted__doa">Dead or Alive</h4>
         <p class="wanted__img">here comes the img</p>
         <div class="wanted__fonts">
@@ -194,8 +199,9 @@
 <section class="section__bounty">
   <h2 class="h2__western">bounty</h2>
   <div class="bounty__board">
-      <div class="board__game"></div>
-      <p class="game__text"></p>
+    <p class="board__rules">Click & Find the 3 OUTLAWS in a row to catch them.</p>
+    <div class="board__game"></div>
+    <p class="game__text"></p>
   </div>
 </section>
 
@@ -222,6 +228,7 @@
 </article>
 
 <footer class="footer">
+  <div class="oval-footer"></div>
   <div class="footer__container">
     <p>slanted publishers</p>
     <a href="https://www.slanted.de/">slanted.de</a>
