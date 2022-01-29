@@ -64,16 +64,16 @@ h3 {
   color: var(--colorSecondary);
 }
 
-section {
+/* section {
   min-height: 100vh;
   width: 100vw;
-}
+} */
 
 p {
   font-family: var(--fontText);
   font-size: var(--fontRegular);
   letter-spacing: .1rem;
-  line-height: 1.4rem;
+  line-height: 1.2;
 }
 
 .orange {

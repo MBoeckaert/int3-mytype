@@ -10,7 +10,7 @@
     'creator__content'
     'creator__registered'
     'creator__banner';
-  height: 100vh;
+  min-height: 100vh;
   width: 100vw;
 }
 
@@ -122,11 +122,21 @@
 @media (min-width: 768px) and (max-width: 1024px) {
 
   .section__creator {
-    grid-template-rows: 1fr 1fr 1.5fr 1fr 1fr;
+    grid-template-rows: 1fr .5fr .5fr .5fr;
+    grid-template-areas:
+      'creator__title'
+      'creator__content'
+      'creator__registered'
+      'creator__banner';
+  }
+
+  .creator__title {
+    margin: 0;
+    justify-content: flex-end;
   }
 
   .creator__title > h1, .title__clarendon {
-    font-size: 4rem;
+    font-size: 4.5rem;
   }
 
   .creator__title > p {
@@ -147,14 +157,15 @@
     font-size: var(--fontMedium);
     line-height: 2rem;
     margin: auto;
-    width: 35rem;
+    width: 43rem;
+    padding: 5vh 0 0;
   }
 }
 
 @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
 
   .section__creator {
-    grid-template-rows: 2fr 1.5fr 1fr 1fr;
+    grid-template-rows: 1fr .5fr .5fr .5fr;
     grid-template-areas:
       'creator__title'
       'creator__content'
@@ -162,8 +173,13 @@
       'creator__banner';
   }
 
+  .creator__title {
+    margin: 0;
+    justify-content: flex-end;
+  }
+
   .creator__title > h1, .title__clarendon {
-    font-size: 4rem;
+    font-size: 4.5rem;
   }
 
   .creator__title > p {
@@ -180,7 +196,7 @@
     font-size: var(--fontMedium);
     line-height: 2rem;
     margin: auto;
-    width: 35rem;
+    width: 43rem;
   }
 }
 
@@ -188,12 +204,16 @@
 @media only screen and (min-width: 1025px) {
 
   .section__creator {
-    grid-template-rows: 2.5fr 2fr 1fr 1fr;
+    grid-template-rows: 3fr 1fr 1fr .5fr;
     grid-template-areas:
       'creator__title'
       'creator__content'
       'creator__registered'
       'creator__banner';
+  }
+
+  .creator__title {
+    padding: 25vh 0 10vh;
   }
 
   .creator__title > h1, .title__clarendon {
@@ -218,5 +238,6 @@
     font-size: var(--fontBig);
     line-height: 2.5rem;
     width: 49rem;
+    /* padding: 5vh 0; */
   }
 }

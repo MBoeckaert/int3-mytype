@@ -29,7 +29,6 @@
 </main>
 
 <!-- section abt Besley -->
-
 <div class="creator__lines"></div>
 
 <section class="section__creator">
@@ -107,21 +106,28 @@
 <!-- what is NFT section -->
 <section class="section__nft">
   <div class="nft__quote-mobile">
-    <p class="nft-tab">if clarendon was </p>
-    <p class="nft-tab1">  released   today,</p>
-    <p class="nft-tab2">  it would be an </p>
+    <div class="nft__text-mobile">
+      <p class="nft-tab">if clarendon was </p>
+      <p class="nft-tab1">  released   today,</p>
+      <p class="nft-tab2">  it would be an </p>
+    </div>
+    <h3 class="nft__title">nft?!</h3>
   </div>
   <div class="nft__quote-desktop">
     <p class="nft__actual-quote">"If clarendon was released today, </p>
     <p class="nft__actual-quote"> it would be an nft"</p>
     <p class="quote__author">- Boeckaert M.</p>
   </div>
-  <h3 class="nft__title">nft?!</h3>
-  <p class="nft__img">img</p>
-  <div class="nft__text-container">
-    <h2 class="nft__text-title">What is <br><span class="underline">an nft?</span> </h2>
-    <p class="nft__text">NFT stands for <span class="orange">Non-Fungible Token</span>. It is a digital art piece or a digital version of a physical artwork and is uploaded on the blockchain, a big excel file on the internet. It certifies a digital asset is therefore not interchangeable, it also gives image rights and ownership back to the creators. But keep in mind that NFT's aren't that environmental friendly.
-    </p>
+
+  <div class="creator__lines"></div>
+
+  <div class="nft__container">
+    <p class="nft__img">img</p>
+    <div class="nft__text-container">
+      <h2 class="nft__text-title">What is <br><span>an nft?</span> </h2>
+      <p class="nft__text">NFT stands for <span class="orange">Non-Fungible Token</span>. It is a digital art piece or a digital version of a physical artwork and is uploaded on the blockchain, a big excel file on the internet. It certifies a digital asset is therefore not interchangeable, it also gives image rights and ownership back to the creators. But keep in mind that NFT's aren't that environmental friendly.
+      </p>
+    </div>
   </div>
 </section>
 <!-- why an NFT section -->
@@ -132,7 +138,6 @@
     <div class="as-nft">as nft?</div>
   </div>
 
-  <!-- another grid here -->
   <div class="why__reasons">
     <div class="picture__container">
       <picture>
@@ -143,17 +148,18 @@
         <img class="reasons__img" src="assets/img/clarendonNFTmobile.png" alt="clarendon billboard" > <!--  do i need width & height here? -->
       </picture>
     </div>
-    <!-- <p class="reasons__img">Here comes an img</p> -->
-    <!-- Make it a lsit -->
-    <p class="reasons__n1">The Clarendon design was immediately after creation
+
+    <ol>
+      <li>The Clarendon design was immediately after creation
     very  popular and rapidly <span class="orange">copied</span> by other foundries.
-    Thanks to the blockain, the original can be easily found.</p>
-    <p class="reasons__n2">Best known as the font of the <span class="orange">lawless</span> Wild West era. The
+    Thanks to the blockain, the original can be easily found.</li>
+      <li>Best known as the font of the <span class="orange">lawless</span> Wild West era. The
     crypto landscape is still in it's infancy and governments
-    are still figuring out how they can regulate this space.</p>
-    <p class="reasons__n3"><span class="orange">Robberies & the gold rush</span> were also characteristic for the
+    are still figuring out how they can regulate this space.</li>
+      <li><span class="orange">Robberies & the gold rush</span> were also characteristic for the
     Wild West. The same is happening with NFT's where big
-    money goes around & many scammers are lurking around.</p>
+    money goes around & many scammers are lurking around.</li>
+    </ol>
   </div>
 </section>
 
@@ -170,14 +176,14 @@
       <div class="wanted-poster__content">
         <h4 class="wanted__doa">Dead or Alive</h4>
         <p class="wanted__img">here comes the img</p>
-        <p class="wanted__craw">Craw</p>
-        <p class="wanted__consort">Consort</p>
-        <p class="wanted__roman">Roman</p>
+        <div class="wanted__fonts">
+          <p class="wanted__craw">Craw</p>
+          <p class="wanted__consort">Consort</p>
+          <p class="wanted__roman">Roman</p>
+        </div>
         <h4 class="wanted__clarendon">Clarendon</h4>
-        <p class="wanted__reward">reward:</p>
-        <p class="wanted__reward-amount">
-          <i class="fab fa-ethereum"></i>210 <span class="small">(€900,453)</span>
-        </p>
+          <p class="wanted__reward">reward: <i class="fab fa-ethereum"></i> 210 <span class="small">(€900,453)</span></p>
+        </div>
       </div>
     </div>
   </div>

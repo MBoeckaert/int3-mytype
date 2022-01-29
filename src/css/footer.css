@@ -7,11 +7,12 @@
 
 .footer__container {
   border-top: .2rem solid var(--colorMain);
-  height: 10vh;
+  min-height: 10vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   color: var(--colorMain);
+  padding: 1vh 0;
 
   & a {
     text-decoration: none;
