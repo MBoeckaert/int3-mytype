@@ -194,11 +194,8 @@
 <section class="section__bounty">
   <h2 class="h2__western">bounty</h2>
   <div class="bounty__board">
-    <div class="bounty__outlaw">
-      <p class="outlaw__img">bounty img</p>
-      <p class="wanted__craw">Craw Clarendon</p>
-      <button>Collect bounty</button>
-    </div>
+      <div class="board__game"></div>
+      <p class="game__text"></p>
   </div>
 </section>
 
