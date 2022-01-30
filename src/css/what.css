@@ -3,8 +3,8 @@
 
 .nft__quote-mobile {
   width: 90vw;
-  margin: 0 auto;
-  height: 50vh;
+  margin: 20vh auto 5vh;
+  height: 25vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -57,17 +57,16 @@
 }
 
 .nft__container {
-  width: 80vw;
-  margin: auto;
+  margin-bottom: 25vh;
 }
 
 .nft__img {
-  height: 30vh;
-  background-color: white;
-  margin: 0 auto;
+  width: 80vw;
+  height: auto;
 }
 
 .nft__text-container {
+  width: 80vw;
   margin: 0 auto;
 }
 
@@ -118,15 +117,20 @@
       font-size: 1rem;
       text-decoration: none;
     }
-
-    & .nft__img, .nft__text {
-      width: 30rem;
-    }
   }
 
   .section__nft > .creator__lines {
     display: block;
     margin-bottom: 10vh;
+  }
+
+  .nft__container {
+    display: flex;
+    margin: 30vh 0;
+  }
+
+  .nft__img, .nft__text-container {
+    width: 40vw;
   }
 
   .nft__text-title {
@@ -137,10 +141,10 @@
     margin: 5vh auto;
     text-decoration: underline;
     text-align: center;
-
+    /*
     & br {
       display: none;
-    }
+    } */
 
     & span {
       text-decoration: none;
@@ -150,43 +154,6 @@
   .nft__text > p {
     font-size: var(--fontMedium);
     line-height: 1.4;
-  }
-}
-
-@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
-
-  .nft__container {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    width: 90vw;
-    height: 80vh;
-    align-items: center;
-
-    & p {
-      width: 40vw;
-    }
-  }
-
-  .nft__text-container {
-    width: 40vw;
-    margin: 0;
-  }
-
-  .nft__img {
-    margin: 0;
-  }
-
-  .nft__text-title {
-    font-size: 4rem;
-
-    & br {
-      display: block;
-    }
-
-    & span {
-      text-decoration: underline;
-    }
   }
 }
 
@@ -231,10 +198,11 @@
   .nft__container {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
     width: 90vw;
     height: 80vh;
     align-items: center;
+    margin: 35vh 0;
 
     & p {
       width: 40vw;
@@ -242,39 +210,33 @@
   }
 
   .nft__text-container {
-    width: 40vw;
+    width: 50vw;
     margin: 0;
     display: flex;
     flex-direction: column;
-    align-items: center;
     padding: 0 2.2rem;
   }
 
   .nft__img {
-    width: 30rem;
-    height: 30rem;
-    margin: 0;
+    width: 40vw;
   }
 
   .nft__text-title {
     display: block;
     color: var(--colorSecondary);
-    font-size: 4rem;
+    font-size: 3.5rem;
     letter-spacing: .1rem;
-    margin: 5vh auto;
+    margin: 0;
+    text-decoration: underline;
 
     & br {
-      display: block;
-    }
-
-    & span {
-      text-decoration: underline;
+      display: none;
     }
   }
 
   .nft__text {
     font-size: var(--fontBig);
-    margin: 2vh auto;
+    /* margin: 2vh auto; */
     line-height: 1.6;
   }
 

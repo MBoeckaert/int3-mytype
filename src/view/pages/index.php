@@ -130,10 +130,16 @@
   <div class="creator__lines"></div>
 
   <div class="nft__container">
-    <p class="nft__img">img</p>
+    <img
+      class="nft__img" height="804" width="563" src="./assets/img/baycBillboardDesktop.png"
+      srcset="./assets/img/baycBillboardDesktop.png 563w,
+              ./assets/img/baycBillboard.png 348w"
+      sizes="(min-width: 768px) 30vw,
+              (min-width: 1025px) 80vw"
+      alt="bayc billboard" />
     <div class="nft__text-container">
       <h2 class="nft__text-title">What is <br><span>an nft?</span> </h2>
-      <p class="nft__text">NFT stands for <span class="orange">Non-Fungible Token</span>. It is a digital art piece or a digital version of a physical artwork and is uploaded on the blockchain, a big excel file on the internet. It certifies a digital asset is therefore not interchangeable, it also gives image rights and ownership back to the creators. But keep in mind that NFT's aren't that environmental friendly.
+      <p class="nft__text">NFT stands for <span class="orange">Non-Fungible Token</span>. It is a digital art piece or a digital version of a physical artwork and is uploaded on the blockchain, a big excel file on the internet. It certifies a digital asset is therefore not interchangeable, it also gives image rights and ownership back to the creators. But keep in mind that NFT's aren't environmental friendly.
       </p>
     </div>
   </div>
@@ -148,15 +154,13 @@
   </div>
 
   <div class="why__reasons">
-    <div class="picture__container">
-      <picture>
-        <source media="(min-width: 1025px)"
-                srcset="assets/img/clarendonNFT.png"
-                sizes="40vw">
-        <source media="(min-width: 767px)" srcset="assets/img/clarendonNFTmobile.png">
-        <img class="reasons__img" src="assets/img/clarendonNFTmobile.png" alt="clarendon billboard" > <!--  do i need width & height here? -->
-      </picture>
-    </div>
+    <img
+      class="reasons__img" height="900" width="633" src="./assets/img/clarendonNFTDesktop.png"
+      srcset="./assets/img/clarendonNFTDesktop.png 633w,
+              ./assets/img/clarendonNFTMobile.png 312w"
+      sizes="(min-width: 768px) 90vw,
+              (min-width: 1025px) 30vw"
+      alt="clarendon NFT" />
 
     <ol>
       <li>The Clarendon design was immediately after creation
@@ -183,14 +187,20 @@
     <h2 class="h2__western">wanted</h2>
     <div class="wanted__poster-border">
       <div class="wanted-poster__content">
-        <div class="oval"></div>
         <h4 class="wanted__doa">Dead or Alive</h4>
-        <p class="wanted__img">here comes the img</p>
-        <div class="wanted__fonts">
-          <p class="wanted__craw">Craw</p>
-          <p class="wanted__consort">Consort</p>
-          <p class="wanted__roman">Roman</p>
-        </div>
+        <img
+          class="wanted__img" height="574" width="1198" src="./assets/img/outlawApesDesktop.png"
+          srcset="./assets/img/outlawApesDesktop.png 1198,
+                  ./assets/img/outlawApesMobile.png 304w"
+          sizes="(min-width: 768px) 90vw,
+                  (min-width: 1025px) 30vw"
+          alt="outlaw Apes" />
+        <img
+          class="wanted__fonts" height="80" width="1005" src="./assets/img/derivativesDesktop.png"
+          srcset="./assets/img/derivativesDesktop.png 1005"
+          sizes="(min-width: 768px) 80vw,
+                  (min-width: 1025px) 80vw"
+          alt="derivative fonts clarendon" />
         <h4 class="wanted__clarendon">Clarendon</h4>
           <p class="wanted__reward">reward: <i class="fab fa-ethereum"></i> 210 <span class="small">(€900,453)</span></p>
         </div>

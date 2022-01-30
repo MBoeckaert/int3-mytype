@@ -35,7 +35,7 @@
   border-bottom: .2rem solid var(--colorMain);
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 1fr 1fr .5fr .5fr 1fr;
+  grid-template-rows: .5fr 2fr .5fr .5fr .5fr;
   grid-auto-flow: row;
   grid-template-areas:
     'doa'
@@ -46,19 +46,6 @@
   width: 80vw;
   height: 60vh;
   margin: auto;
-
-  & .oval {
-    position: absolute;
-    top: 9vh;
-    left: 10vw;
-    width: 61vw;
-    height: 30vh;
-    background-color: var(--colorPurple);
-    opacity: .7;
-    filter: blur(1.5rem);
-    border-radius: 50%;
-    z-index: -1;
-  }
 }
 
 .wanted__doa {
@@ -72,20 +59,13 @@
 
 .wanted__img {
   grid-area: wanted__img;
-  height: 30vh;
-  width: 60vw;
-  margin: auto;
-  background-color: white;
+  width: 80vw;
+  height: auto;
 }
 
 .wanted__fonts {
   grid-area: wanted__fonts;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  width: 100%;
-  color: var(--colorSecondary);
-  font-size: var(--fontRegular);
+  width: 80vw;
 }
 
 .wanted__clarendon {
@@ -122,7 +102,8 @@
     font-size: 4rem;
   }
 
-  .outlaws__wanted-poster {
+  .wanted-poster__content {
+    height: 80vh;
 
     & .wanted__doa {
       font-size: var(--fontBig);
@@ -160,18 +141,14 @@
   .outlaws__wanted-poster {
 
     & .wanted-poster__content {
-      height: 90vh;
-
-      & .oval {
-        top: 23vh;
-        filter: blur(10.5rem);
-      }
+      grid-template-rows: repeat(5, 1fr);
+      height: 100vh;
     }
 
     & .wanted__img {
+      justify-self: center;
+      width: 50vw;
       margin-bottom: 1vh;
-      height: 40vh;
-      width: 40rem;
     }
 
     & .wanted__doa {
@@ -179,9 +156,8 @@
     }
 
     & .wanted__fonts {
-      width: 40rem;
+      width: 50vw;
       margin: 0 auto;
-      justify-content: space-between;
     }
 
     & .wanted__clarendon {

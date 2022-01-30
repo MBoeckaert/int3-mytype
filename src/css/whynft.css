@@ -11,7 +11,7 @@
   width: 100vw;
   height: 30vh;
   background-color: #2fc4d9;
-  filter: blur(12.5rem);
+  filter: blur(15.5rem);
   border-radius: 50%;
   z-index: -1;
 }
@@ -60,11 +60,14 @@
 .why__reasons {
   width: 80vw;
   margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 
-  & .picture__container {
-    grid-area: reasons__img;
-    text-align: center;
-    margin: auto;
+  & .reasons__img {
+    width: 60vw;
+    height: auto;
+    margin: 0 auto;
   }
 }
 
@@ -95,13 +98,16 @@ ol > li:nth-child(2) {
   }
 
   .why__reasons {
+    width: 90vw;
+    margin: 0 auto;
 
     & ol {
-      margin-top: 10vh;
+      width: 70vw;
+      margin: 10vh auto;
     }
 
     & li {
-      font-size: var(--fontMedium);
+      font-size: var(--fontBig);
       line-height: 1.4;
     }
 
@@ -112,6 +118,7 @@ ol > li:nth-child(2) {
   }
 }
 
+/* Tablet landscape */
 @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
 
   .nft-why__grid {
@@ -124,11 +131,16 @@ ol > li:nth-child(2) {
 
   .why__reasons {
     display: flex;
+    flex-direction: row;
     align-items: center;
+    width: 90vw;
 
-    & li {
-      font-size: var(--fontMedium);
-      line-height: 1.4;
+    & .reasons__img {
+      width: 45vw;
+    }
+
+    & ol {
+      width: 45vw;
     }
   }
 }
@@ -149,26 +161,23 @@ ol > li:nth-child(2) {
 
   .why__reasons {
     display: flex;
+    flex-direction: row;
     align-items: center;
     width: 90vw;
 
-    & .picture__container {
-      width: 45vw;
+    & .reasons__img {
+      width: 40vw;
     }
 
     & ol {
       width: 45vw;
+      margin-top: 0;
     }
 
     & li {
       font-size: var(--fontBig);
       line-height: 2rem;
       line-height: 1.6;
-    }
-
-    & ol > li:nth-child(2) {
-      margin: 10vh 0;
-      font-style: var(--fontText);
     }
   }
 }

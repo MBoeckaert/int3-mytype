@@ -14,15 +14,15 @@ export const init = () => {
 const bountyGame = document.querySelector('.board__game');
 
 const getData = () => [
-  {imgSrc: 'assets/img/bgMobile.png', name: 'clarendon1'},
-  {imgSrc: 'assets/img/clarendonNFTmobile.png', name: 'derivative'},
-  {imgSrc: 'assets/img/bgMobile.png', name: 'clarendon2'},
-  {imgSrc: 'assets/img/clarendonNFTmobile.png', name: 'clarendon3'},
-  {imgSrc: 'assets/img/bgMobile.png', name: 'derivative'},
-  {imgSrc: 'assets/img/clarendonNFTmobile.png', name: 'clarendon4'},
-  {imgSrc: 'assets/img/bgMobile.png', name: 'clarendon5'},
-  {imgSrc: 'assets/img/clarendonNFTmobile.png', name: 'derivative'},
-  {imgSrc: 'assets/img/clarendonNFTmobile.png', name: 'clarendon6'}
+  {imgSrc: 'assets/img/sherifApeDesktop.png', name: 'clarendon1'},
+  {imgSrc: 'assets/img/wifeApeDesktop.png', name: 'derivative'},
+  {imgSrc: 'assets/img/sherifApeDesktop.png', name: 'clarendon2'},
+  {imgSrc: 'assets/img/sherifApeDesktop.png', name: 'clarendon3'},
+  {imgSrc: 'assets/img/mutantApeDesktop.png', name: 'derivative'},
+  {imgSrc: 'assets/img/sherifApeDesktop.png', name: 'clarendon4'},
+  {imgSrc: 'assets/img/sherifApeDesktop.png', name: 'clarendon5'},
+  {imgSrc: 'assets/img/oldApeDesktop.png', name: 'derivative'},
+  {imgSrc: 'assets/img/sherifApeDesktop.png', name: 'clarendon6'}
 ];
 
 const randomize = () => {
@@ -82,7 +82,7 @@ const checkCards = e => {
       card.style.pointerEvents = 'none';
     });
     bountyGame.style.pointerEvents = 'none';
-    gameText.textContent = 'you have won';
+    gameText.textContent = 'They are CAUGHT!';
   } else {
     flippedCards.length === 2;
     console.log('wrong');
