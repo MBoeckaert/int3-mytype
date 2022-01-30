@@ -1,15 +1,15 @@
 export const init = () => {
   console.log('start executing this JavaScript');
-  testingGSAP();
+  // testingGSAP();
 
   // console.log(bountyGame);
   cardGenerator();
 };
 
-const testingGSAP = () => {
-  console.log('i am working');
-  gsap.to('.img__billboard', {duration: 2, x: 100});
-};
+// const testingGSAP = () => {
+//   console.log('i am working');
+//   gsap.to('.img__billboard', {duration: 2, x: 100});
+// };
 
 const bountyGame = document.querySelector('.board__game');
 

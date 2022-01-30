@@ -35,14 +35,6 @@
   align-items: center;
 }
 
-.title__clarendon {
-  text-decoration: underline;
-  font-size: 2.5rem;
-  color: var(--colorMain);
-  text-transform: uppercase;
-  margin: 0 auto;
-}
-
 .creator__title > p {
   color: var(--colorMain);
   font-size: var(--fontSmall);

@@ -1,19 +1,13 @@
 <!-- landing page -->
 <main class="landing-page">
+  <img
+    class="img__billboard" height="798" width="240" src="./assets/img/landingMobile.png"
+    srcset="./assets/img/landingDesktop.png 240w,
+            ./assets/img/landingMobile.png 158w"
+    sizes="(min-width: 768px) 30vw,
+            (min-width: 1025px) 10vw"
+    alt="clarendon typeface billboard" />
   <div class="landing__img">
-    <picture>
-      <source media="(min-width: 1025px)"
-              srcset="assets/img/clarendonDesktop.png"
-              sizes="40vw">
-      <source media="(min-width: 767px)"
-              srcset="assets/img/clarendonTablet.png">
-      <img class="img__billboard" src="assets/img/clarendonMobile.png" alt="clarendon billboard" >
-    </picture>
-    <picture>
-        <source media="(min-width: 1025px)" srcset="assets/img/typefaceDesktop.png">
-      <source media="(min-width: 767px)" srcset="assets/img/typefaceTablet.png">
-      <img class="img__billboard" src="assets/img/typefaceMobile.png" alt="typeface billboard" >
-    </picture>
   </div>
 
   <div class="landing__text-bg">
@@ -41,9 +35,15 @@
     </picture>
   </div>
   <div class="creator__title">
-    <h1>Robert Besley</h1>
+    <img
+      class="title__img" height="185" width="1242" src="./assets/img/robertBesleyDesktop.png"
+      srcset="./assets/img/robertBesleyDesktop.png 1242w,
+              ./assets/img/robertBesleyMobile.png 392w"
+      sizes="(min-widht: 768px) 30vw,
+              (min-width: 1025px) 10vw"
+      alt="clarendon typeface billboard" />
     <p>creator of</p>
-    <h2 class="title__clarendon">Clarendon</h2>
+    <h1 class="title__clarendon">Clarendon</h1>
   </div>
   <p class="creator__content">Clarendon was published in 1845 after Robert Besley, an employee
   of the fans street foundry since 1826, was made a partner in the
