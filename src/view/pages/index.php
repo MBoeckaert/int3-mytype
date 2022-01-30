@@ -228,7 +228,7 @@
 </article>
 
 <footer class="footer">
-  <div class="oval-footer"></div>
+  <div class="oval-"></div>
   <div class="footer__container">
     <p>slanted publishers</p>
     <a href="https://www.slanted.de/">slanted.de</a>
