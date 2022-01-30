@@ -39,9 +39,9 @@
       class="title__img" height="185" width="1242" src="./assets/img/robertBesleyDesktop.png"
       srcset="./assets/img/robertBesleyDesktop.png 1242w,
               ./assets/img/robertBesleyMobile.png 392w"
-      sizes="(min-widht: 768px) 30vw,
-              (min-width: 1025px) 10vw"
-      alt="clarendon typeface billboard" />
+      sizes="(min-width: 768px) 90vw,
+              (min-width: 1025px) 70vw"
+      alt="robert besley" />
     <p>creator of</p>
     <h1 class="title__clarendon">Clarendon</h1>
   </div>
@@ -97,7 +97,12 @@
   <div class="characteristics__text">
     <h2 class="characteristics__title">The first type<br> <span class="border-bottom">designed to be bold</span></h2>
     <p>Clarendon is an English Slab-Serif. The strokes are fairly heavy of thick and thin weight contrast rather than a unfiform stroke. Characters such as f, a, e and g have a <span class="orange">rounded serif</span>, in which is based on the roman model unlike the rest which is based on the Egyptian bold style.</p>
-    <p class="characteristics__img">img</p>
+    <img
+      class="characteristics__img" height="124" width="314" src="./assets/img/clarendonTypography.png"
+      srcset="./assets/img/clarendonTypography.png 314w"
+      sizes="(min-width: 768px) 80vw,
+              (min-width: 1025px) 70vw"
+      alt="clarendon typography" />
     <p> However, the squared serif are not as thick as most of the Egyptian style but rather have <span class="orange">subtle brackets</span>. Because of the bracketed serifs and the contrast in weights, it becomes a "problem as stroke become thinner it limits how tight the typeface can go (Velazquez).</p>
   </div>
 </section>

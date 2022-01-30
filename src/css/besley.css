@@ -35,6 +35,11 @@
   align-items: center;
 }
 
+.title__img {
+  width: 90vw;
+  height: auto;
+}
+
 .creator__title > p {
   color: var(--colorMain);
   font-size: var(--fontSmall);
@@ -129,6 +134,11 @@
     justify-content: flex-end;
   }
 
+  .title__img {
+    width: 80vw;
+    height: auto;
+  }
+
   .creator__title > h1, .title__clarendon {
     font-size: 4.5rem;
   }
@@ -208,6 +218,11 @@
 
   .creator__title {
     padding: 25vh 0 10vh;
+  }
+
+  .title__img {
+    width: 70vw;
+    height: auto;
   }
 
   .creator__title > h1, .title__clarendon {
