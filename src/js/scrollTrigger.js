@@ -1,4 +1,4 @@
-import gsap, {Power1, Power4} from 'gsap/gsap-core';
+import gsap, {Power1} from 'gsap/gsap-core';
 import ScrollTrigger from 'gsap/ScrollTrigger';
 
 export const scrollTrigger = () => {
@@ -16,7 +16,7 @@ const movingElements = () => {
         gsap.from(textAppear.querySelectorAll('.char'), {
           scrollTrigger: {
             trigger: textAppear,
-            start: 'top center',
+            start: 'top bottom',
             end: 'bottom top',
             // scrub: true,
             // markers: true
