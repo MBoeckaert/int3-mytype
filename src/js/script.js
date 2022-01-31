@@ -1,7 +1,9 @@
+import {cardMovement} from './nftCard.js';
+
 export const init = () => {
   console.log('start executing this JavaScript');
   // testingGSAP();
-
+  cardMovement();
   // console.log(bountyGame);
   cardGenerator();
 };
@@ -51,7 +53,6 @@ const cardGenerator = () => {
     bountyGame.appendChild(card);
     card.appendChild(front);
     card.appendChild(back);
-    console.log(card);
 
     card.addEventListener('click', e => {
       card.classList.toggle('toggleCard');

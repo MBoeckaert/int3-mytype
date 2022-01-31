@@ -12,8 +12,8 @@
 
   <div class="landing__text-bg">
     <div class="landing-text">
-      <?php echo $landing__textContent ?> <!-- this doesn't work: error 500 -->
-      <!-- <p class="landing__text-content">This week in Slanted mini typography series: Clarendon. If Clarendon was invented today, it would probably be released as an NFT. A digital object circulating in the digital wild west.</p> -->
+      <?php // echo $landing__textContent ?>
+      <p class="landing__text-content" data-splitting>This week in Slanted mini typography series: Clarendon. If Clarendon was invented today, it would probably be released as an NFT. A digital object circulating in the digital wild west.</p>
       <div class="read-more">
         <p>scroll to read</p>
         <i class="fas fa-chevron-down"></i>
@@ -45,7 +45,7 @@
     <p>creator of</p>
     <h1 class="title__clarendon">Clarendon</h1>
   </div>
-  <p class="creator__content">Clarendon was published in 1845 after Robert Besley, an employee
+  <p class="creator__content" data-splitting>Clarendon was published in 1845 after Robert Besley, an employee
   of the fans street foundry since 1826, was made a partner in the
   Firm. Due to its popularity, Besley registered the typeface under
   Britain’s Ornamental Designs Act of 1842. The patent expired
@@ -154,13 +154,15 @@
   </div>
 
   <div class="why__reasons">
-    <img
-      class="reasons__img" height="900" width="633" src="./assets/img/clarendonNFTDesktop.png"
-      srcset="./assets/img/clarendonNFTDesktop.png 633w,
-              ./assets/img/clarendonNFTMobile.png 312w"
-      sizes="(min-width: 768px) 90vw,
-              (min-width: 1025px) 30vw"
-      alt="clarendon NFT" />
+    <!-- <div class="nft__container"> -->
+      <img
+        class="reasons__img" height="900" width="633" src="./assets/img/clarendonNFTDesktop.png"
+        srcset="./assets/img/clarendonNFTDesktop.png 633w,
+                ./assets/img/clarendonNFTMobile.png 312w"
+        sizes="(min-width: 768px) 90vw,
+                (min-width: 1025px) 30vw"
+        alt="clarendon NFT" />
+    <!-- </div> -->
 
     <ol>
       <li>The Clarendon design was immediately after creation
