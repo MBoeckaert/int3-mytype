@@ -19,7 +19,7 @@ const movingElements = () => {
             start: 'top center',
             end: 'bottom top',
             // scrub: true,
-            markers: true
+            // markers: true
           },
           opacity: 0,
           // y: - 50,
