@@ -16,15 +16,15 @@ export const init = () => {
 const bountyGame = document.querySelector('.board__game');
 
 const getData = () => [
-  {imgSrc: 'assets/img/sherifApeDesktop.png', name: 'clarendon1'},
-  {imgSrc: 'assets/img/wifeApeDesktop.png', name: 'derivative'},
-  {imgSrc: 'assets/img/sherifApeDesktop.png', name: 'clarendon2'},
-  {imgSrc: 'assets/img/sherifApeDesktop.png', name: 'clarendon3'},
-  {imgSrc: 'assets/img/mutantApeDesktop.png', name: 'derivative'},
-  {imgSrc: 'assets/img/sherifApeDesktop.png', name: 'clarendon4'},
-  {imgSrc: 'assets/img/sherifApeDesktop.png', name: 'clarendon5'},
-  {imgSrc: 'assets/img/oldApeDesktop.png', name: 'derivative'},
-  {imgSrc: 'assets/img/sherifApeDesktop.png', name: 'clarendon6'}
+  {imgSrc: 'assets/img/originalApeDesktop.png', name: 'clarendon1'},
+  {imgSrc: 'assets/img/wantedWifeApeDesktop.png', name: 'derivative'},
+  {imgSrc: 'assets/img/originalApeDesktop.png', name: 'clarendon2'},
+  {imgSrc: 'assets/img/originalApeDesktop.png', name: 'clarendon3'},
+  {imgSrc: 'assets/img/wantedMutantDesktop.png', name: 'derivative'},
+  {imgSrc: 'assets/img/originalApeDesktop.png', name: 'clarendon4'},
+  {imgSrc: 'assets/img/originalApeDesktop.png', name: 'clarendon5'},
+  {imgSrc: 'assets/img/wantedOldApeDesktop.png', name: 'derivative'},
+  {imgSrc: 'assets/img/originalApeDesktop.png', name: 'clarendon6'}
 ];
 
 const randomize = () => {
