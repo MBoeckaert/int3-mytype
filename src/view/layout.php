@@ -9,7 +9,6 @@
   <link rel="stylesheet" href="https://unpkg.com/splitting/dist/splitting.css" />
   <link rel="stylesheet" href="https://unpkg.com/splitting/dist/splitting-cells.css" />
   <link rel="shortcut icon" href="./assets/img/favicon-32x32.png" type="image/png">
-  <script src="https://unpkg.com/splitting/dist/splitting.min.js"></script>
   <?php echo $css; ?>
   <title>Slanted: Clarendon Typography</title>
 </head>
@@ -19,8 +18,8 @@
   </div>
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollTrigger.min.js"></script>
-  <script> Splitting(); </script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollTrigger.min.js"></script>
+  <script src="https://unpkg.com/splitting/dist/splitting.min.js"></script>
   <?php echo $js; ?>
 </body>
 </html>

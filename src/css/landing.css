@@ -54,19 +54,6 @@
   }
 }
 
-.splitting .char {
-  animation: slide-in 1s cubic-bezier(.5, 0, .5, 1) both;
-  animation-delay: calc(3ms * var(--char-index) + 1000ms);
-}
-
-@keyframes slide-in {
-
-  from {
-    transform: translateY(1.5em);
-    opacity: 0;
-  }
-}
-
 .read-more > p {
   margin: 5vh auto .1rem;
   font-size: var(--fontSmall);

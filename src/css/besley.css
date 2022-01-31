@@ -53,6 +53,7 @@
   width: 20rem;
   font-size: var(--fontRegular);
   text-align: center;
+  /* opacity: 0; */
 }
 
 .creator__registered {

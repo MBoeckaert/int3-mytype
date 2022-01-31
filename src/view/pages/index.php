@@ -44,7 +44,7 @@
     <p>creator of</p>
     <h1 class="title__clarendon">Clarendon</h1>
   </div>
-  <p class="creator__content" data-splitting><?php echo $creator__content ?></p>
+  <p class="creator__content showMe" data-splitting><?php echo $creator__content ?></p>
   <p class="creator__registered uppercase"><?php echo $creator__registered ?></p>
   <div class="creator__banner">
     <div class="scroll-holder">
@@ -89,7 +89,7 @@
 
   <div class="characteristics__container">
     <h2 class="characteristics__title"><?php echo $characteristics__title ?> <span class="border-bottom"><?php echo $borderBottom ?> </span></h2>
-    <p class="characteristics__text"><?php echo $characteristics__text1 ?> </p>
+    <p class="characteristics__text showMe" data-splitting><?php echo $characteristics__text1 ?> </p>
     <img
       class="characteristics__img" height="124" width="314" src="./assets/img/clarendonTypography.png"
       srcset="./assets/img/clarendonTypography.png 314w"
@@ -97,7 +97,7 @@
               (min-width: 1025px) 70vw,
               (min-width: 1250px) 40vw"
       alt="clarendon typography" />
-    <p class="characteristics__text"> <?php echo $characteristics__text2 ?></p>
+    <p class="characteristics__text showMe" data-splitting> <?php echo $characteristics__text2 ?></p>
   </div>
 </section>
 
@@ -133,7 +133,7 @@
       alt="bayc billboard" />
     <div class="nft__text-container">
       <h2 class="nft__text-title"><?php echo $nft__textTitle ?></h2>
-      <p class="nft__text"><?php echo $nft__text ?></p>
+      <p class="nft__text showMe" data-splitting><?php echo $nft__text ?></p>
     </div>
   </div>
 </section>
@@ -158,9 +158,9 @@
     <!-- </div> -->
 
     <ol>
-      <li><?php echo $nftReason1?></li>
-      <li><?php echo $nftReason2?></li>
-      <li><?php echo $nftReason3?></li>
+      <li class="showMe" data-splitting><?php echo $nftReason1?></li>
+      <li class="showMe" data-splitting><?php echo $nftReason2?></li>
+      <li class="showMe" data-splitting><?php echo $nftReason3?></li>
     </ol>
   </div>
 </section>

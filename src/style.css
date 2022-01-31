@@ -97,3 +97,16 @@ p {
   border-bottom: .2rem solid var(--colorSecondary);
   padding-bottom: 1rem;
 }
+
+/* .splitting .char {
+  animation: slide-in 1s cubic-bezier(.5, 0, .5, 1) both;
+  animation-delay: calc(3ms * var(--char-index) + 1000ms);
+}
+
+@keyframes slide-in {
+
+  from {
+    transform: translateY(1.5em);
+    opacity: 0;
+  }
+} */
