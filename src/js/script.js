@@ -4,7 +4,7 @@ import {scrollTrigger} from './scrollTrigger';
 
 export const init = () => {
   console.log('start executing this JavaScript');
-  gsap.registerPlugin(ScrollTrigger);
+  // gsap.registerPlugin(ScrollTrigger);
   // testingGSAP();
   cardMovement();
   scrollTrigger();
