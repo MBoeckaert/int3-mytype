@@ -101,7 +101,8 @@
       class="characteristics__img" height="124" width="314" src="./assets/img/clarendonTypography.png"
       srcset="./assets/img/clarendonTypography.png 314w"
       sizes="(min-width: 768px) 80vw,
-              (min-width: 1025px) 70vw"
+              (min-width: 1025px) 70vw,
+              (min-width: 1250px) 40vw"
       alt="clarendon typography" />
     <p> However, the squared serif are not as thick as most of the Egyptian style but rather have <span class="orange">subtle brackets</span>. Because of the bracketed serifs and the contrast in weights, it becomes a "problem as stroke become thinner it limits how tight the typeface can go (Velazquez).</p>
   </div>
@@ -216,7 +217,8 @@
 <section class="section__bounty">
   <h2 class="h2__western">bounty</h2>
   <div class="bounty__board">
-    <p class="board__rules">Click & Find the 3 OUTLAWS in a row to catch them.</p>
+    <p class="board__rules">Find French, Consort & Craw!</p>
+    <p class="board__rules">Click the 3 OUTLAWS in a row to catch them.</p>
     <div class="board__game"></div>
     <p class="game__text"></p>
   </div>

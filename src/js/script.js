@@ -83,7 +83,7 @@ const checkCards = e => {
       card.style.pointerEvents = 'none';
     });
     bountyGame.style.pointerEvents = 'none';
-    gameText.textContent = 'They are CAUGHT!';
+    gameText.textContent = 'CAUGHT!';
   } else {
     flippedCards.length === 2;
     console.log('wrong');

@@ -26,17 +26,24 @@
     'clarendon'
     'as-nft';
   width: 90vw;
+  height: 30vh;
   margin: 10vh auto;
   color: var(--colorMain);
   text-transform: uppercase;
   text-align: center;
-  font-size: 5rem;
+  font-size: 4rem;
 
-  & .why { grid-area: why; }
+  & .why {
+    grid-area: why;
+    margin: auto;
+  }
 
   /* again ::before & ::after for line */
 
-  & .as-nft { grid-area: as-nft; }
+  & .as-nft {
+    grid-area: as-nft;
+    margin: auto;
+  }
 }
 
 .clarendon {
@@ -52,7 +59,7 @@
   display: inline-block;
   content: '';
   height: .2rem;
-  width: 25%;
+  width: 15%;
   background: var(--colorSecondary);
   margin: .4rem 1rem;
 }
@@ -93,6 +100,7 @@ ol > li:nth-child(2) {
 @media (min-width: 768px) and (max-width: 1024px) {
 
   .nft-why__grid {
+    height: 40vh;
     font-size: 8rem;
     margin: 20vh auto;
 
@@ -126,6 +134,7 @@ ol > li:nth-child(2) {
 @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
 
   .nft-why__grid {
+    height: 40vh;
     font-size: 8rem;
 
     & .clarendon {
@@ -150,9 +159,10 @@ ol > li:nth-child(2) {
 }
 
 /* Desktop what is NFT? */
-@media only screen and (min-width: 1025px) {
+@media (min-width: 1025px) and (max-width: 1500px) {
 
   .nft-why__grid {
+    height: 40vh;
     font-size: 8rem;
     margin-bottom: 20vh;
     letter-spacing: .5rem;
@@ -183,5 +193,13 @@ ol > li:nth-child(2) {
 
   .reasons__img {
     width: 40vw;
+  }
+}
+
+/* Big Desktop landing page */
+@media only screen and (min-width: 1250px) {
+
+  .reasons__img {
+    width: 30vw;
   }
 }

@@ -12,7 +12,7 @@ const movingCard = () => {
     // console.log(e.pageY, e.pageX);
     const xAxis = (window.innerWidth / 4 - e.pageX) / - 10;
     const yAxis = (window.innerHeight / 2 - e.pageY) / - 25;
-    card.style.transform = `rotateY(${xAxis}deg) rotateX(${yAxis + 180}deg)`;
+    card.style.transform = `rotateY(${xAxis + 27}deg) rotateX(${yAxis + 90}deg)`;
     console.log(xAxis, yAxis);
     // if (window.matchMedia('(min-width:1025px')) {
     //   card.style.transform = `rotateY(${xAxis}deg) rotateX(${yAxis}deg)`;

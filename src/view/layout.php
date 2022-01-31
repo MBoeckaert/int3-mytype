@@ -11,7 +11,7 @@
   <link rel="shortcut icon" href="./assets/img/favicon-32x32.png" type="image/png">
   <script src="https://unpkg.com/splitting/dist/splitting.min.js"></script>
   <?php echo $css; ?>
-  <title>Slanted: Clarendon</title>
+  <title>Slanted: Clarendon Typography</title>
 </head>
 <body>
   <div class="container">

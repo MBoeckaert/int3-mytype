@@ -158,7 +158,7 @@
 }
 
 /* Desktop what is NFT? */
-@media only screen and (min-width: 1025px) {
+@media (min-width: 1025px) and (max-width: 1500px) {
 
   .nft__bg {
     width: 100vw;
@@ -242,5 +242,13 @@
 
   .nft__quote-mobile, .nft__title {
     display: none;
+  }
+}
+
+/* Big Desktop landing page */
+@media only screen and (min-width: 1250px) {
+
+  .nft__img {
+    width: 35vw;
   }
 }

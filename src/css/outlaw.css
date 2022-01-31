@@ -66,6 +66,7 @@
 .wanted__fonts {
   grid-area: wanted__fonts;
   width: 80vw;
+  height: 50%;
 }
 
 .wanted__clarendon {
@@ -124,7 +125,7 @@
 }
 
 /* Desktop what is NFT? */
-@media only screen and (min-width: 1025px) {
+@media (min-width: 1025px) and (max-width: 1500px) {
 
   .outlaws__title > p {
     font-size: var(--fontBig);
@@ -177,5 +178,13 @@
       font-size: 3rem;
       text-align: end;
     }
+  }
+}
+
+/* Big Desktop landing page */
+@media only screen and (min-width: 1250px) {
+
+  .wanted__img {
+    width: 40vw;
   }
 }
