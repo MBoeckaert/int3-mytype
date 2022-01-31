@@ -178,15 +178,15 @@
       <div class="wanted-poster__content">
         <h4 class="wanted__doa"><?php echo $wanted__doa?></h4>
         <img
-          class="wanted__img" height="574" width="1198" src="./assets/img/outlawApesDesktop.png"
-          srcset="./assets/img/outlawApesDesktop.png 1198,
-                  ./assets/img/outlawApesMobile.png 304w"
+          class="wanted__img" height="574" width="1198" src="./assets/img/wantedApesDesktop.png"
+          srcset="./assets/img/wantedApesDesktop.png 1198w,
+                  ./assets/img/wantedApesMobile.png 304w"
           sizes="(min-width: 768px) 90vw,
                   (min-width: 1025px) 30vw"
-          alt="outlaw Apes" />
+          alt="wanted Apes" />
         <img
           class="wanted__fonts" height="80" width="1005" src="./assets/img/derivativesDesktop.png"
-          srcset="./assets/img/derivativesDesktop.png 1005"
+          srcset="./assets/img/derivativesDesktop.png 1005w"
           sizes="(min-width: 768px) 80vw,
                   (min-width: 1025px) 80vw"
           alt="derivative fonts clarendon" />

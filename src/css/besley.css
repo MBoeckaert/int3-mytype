@@ -74,6 +74,7 @@
   overflow: hidden;
   display: flex;
   align-items: center;
+  background-color: var(--colorBg);
 }
 
 .scroll-holder {
