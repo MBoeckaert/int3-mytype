@@ -12,8 +12,8 @@
 
   <div class="landing__text-bg">
     <div class="landing-text">
-      <?php // echo $landing__textContent ?>
-      <p class="landing__text-content" data-splitting>This week in Slanted mini typography series: Clarendon. If Clarendon was invented today, it would probably be released as an NFT. A digital object circulating in the digital wild west.</p>
+      <p class="landing__text-content" data-splitting><?php echo $landing__textContent ?></p>
+      <!-- <p class="landing__text-content" data-splitting>This week in Slanted mini typography series: Clarendon. If Clarendon was invented today, it would probably be released as an NFT. A digital object circulating in the digital wild west.</p> -->
       <div class="read-more">
         <p>scroll to read</p>
         <i class="fas fa-chevron-down"></i>

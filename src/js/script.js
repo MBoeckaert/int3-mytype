@@ -84,6 +84,7 @@ const checkCards = e => {
       card.style.pointerEvents = 'none';
     });
     bountyGame.style.pointerEvents = 'none';
+    gameText.textContent = 'Good job! You caught them!';
     gameEnd.classList.add('caught');
   } else {
     flippedCards.length === 2;
