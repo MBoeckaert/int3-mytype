@@ -15,7 +15,7 @@
     grid-area: slanted__title;
     margin: auto;
 
-    & p {
+    & .slanted__text {
       font-size: 1.5rem;
       margin: 1vh;
       text-align: center;
@@ -39,7 +39,7 @@
   align-items: center;
   margin: 0 auto;
 
-  & h4 {
+  & .slanted__subTitle {
     font-size: var(--fontMedium);
     font-family: var(--fontText);
     letter-spacing: .1rem;

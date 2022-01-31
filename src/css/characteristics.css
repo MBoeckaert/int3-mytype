@@ -96,7 +96,7 @@
   margin: 0 auto;
 }
 
-.characteristics__text {
+.characteristics__container {
   display: flex;
   flex-direction: column;
   margin-bottom: 20vh;
@@ -116,7 +116,7 @@
   }
 }
 
-.characteristics__text > p {
+.characteristics__text {
   margin: 1vh auto;
   width: 80vw;
   line-height: 1.2;
@@ -144,7 +144,7 @@
     width: 100%;
   }
 
-  .characteristics__text {
+  .characteristics__container {
 
     & .characteristics__title {
       font-size: 2rem;
@@ -177,7 +177,7 @@
     width: 100%;
   }
 
-  .characteristics__text {
+  .characteristics__container {
 
     & .characteristics__title {
       font-size: 2rem;
@@ -224,7 +224,7 @@
     width: 100%;
   }
 
-  .characteristics__text {
+  .characteristics__container {
 
     & .characteristics__title {
       font-size: 2.5rem;
@@ -245,7 +245,7 @@
 /* Big Desktop landing page */
 @media only screen and (min-width: 1250px) {
 
-  .characteristics__text {
+  .characteristics__container {
 
     & .characteristics__img {
       width: 40vw;

@@ -13,7 +13,6 @@
   <div class="landing__text-bg">
     <div class="landing-text">
       <p class="landing__text-content" data-splitting><?php echo $landing__textContent ?></p>
-      <!-- <p class="landing__text-content" data-splitting>This week in Slanted mini typography series: Clarendon. If Clarendon was invented today, it would probably be released as an NFT. A digital object circulating in the digital wild west.</p> -->
       <div class="read-more">
         <p>scroll to read</p>
         <i class="fas fa-chevron-down"></i>
@@ -45,14 +44,8 @@
     <p>creator of</p>
     <h1 class="title__clarendon">Clarendon</h1>
   </div>
-  <p class="creator__content" data-splitting>Clarendon was published in 1845 after Robert Besley, an employee
-  of the fans street foundry since 1826, was made a partner in the
-  Firm. Due to its popularity, Besley registered the typeface under
-  Britain’s Ornamental Designs Act of 1842. The patent expired
-  three years later and other foundries were quick to copy it.
-  Clarendon is considered
-  </p>
-  <p class="creator__registered uppercase">the first <br>registered typeface.</p>
+  <p class="creator__content" data-splitting><?php echo $creator__content ?></p>
+  <p class="creator__registered uppercase"><?php echo $creator__registered ?></p>
   <div class="creator__banner">
     <div class="scroll-holder">
       <div class="scroll">
@@ -94,9 +87,9 @@
     <div class="displays"><i class="fab fa-ethereum"></i> display <i class="fab fa-ethereum colorMain"></i></div>
   </div>
 
-  <div class="characteristics__text">
-    <h2 class="characteristics__title">The first type<br> <span class="border-bottom">designed to be bold</span></h2>
-    <p>Clarendon is an English Slab-Serif. The strokes are fairly heavy of thick and thin weight contrast rather than a unfiform stroke. Characters such as f, a, e and g have a <span class="orange">rounded serif</span>, in which is based on the roman model unlike the rest which is based on the Egyptian bold style.</p>
+  <div class="characteristics__container">
+    <h2 class="characteristics__title"><?php echo $characteristics__title ?> <span class="border-bottom"><?php echo $borderBottom ?> </span></h2>
+    <p class="characteristics__text"><?php echo $characteristics__text1 ?> </p>
     <img
       class="characteristics__img" height="124" width="314" src="./assets/img/clarendonTypography.png"
       srcset="./assets/img/clarendonTypography.png 314w"
@@ -104,7 +97,7 @@
               (min-width: 1025px) 70vw,
               (min-width: 1250px) 40vw"
       alt="clarendon typography" />
-    <p> However, the squared serif are not as thick as most of the Egyptian style but rather have <span class="orange">subtle brackets</span>. Because of the bracketed serifs and the contrast in weights, it becomes a "problem as stroke become thinner it limits how tight the typeface can go (Velazquez).</p>
+    <p class="characteristics__text"> <?php echo $characteristics__text2 ?></p>
   </div>
 </section>
 
@@ -114,17 +107,17 @@
 <section class="section__nft">
   <div class="nft__quote-mobile">
     <div class="nft__text-mobile">
-      <p class="nft-tab">if clarendon was </p>
-      <p class="nft-tab1">  released   today,</p>
-      <p class="nft-tab2">  it would be an </p>
+      <p class="nft-tab"><?php echo $nftTab1 ?></p>
+      <p class="nft-tab1"><?php echo $nftTab2 ?></p>
+      <p class="nft-tab2"><?php echo $nftTab3 ?></p>
     </div>
-    <h3 class="nft__title">nft?!</h3>
+    <h3 class="nft__title"><?php echo $nft__title ?></h3>
   </div>
   <div class="nft__quote-desktop">
     <div class="vertical-oval oval-left"></div>
-    <p class="nft__actual-quote">"If clarendon was released today, </p>
-    <p class="nft__actual-quote"> it would be an nft"</p>
-    <p class="quote__author">- Boeckaert M.</p>
+    <p class="nft__actual-quote"><?php echo $nft__actualQuote1?></p>
+    <p class="nft__actual-quote"><?php echo $nft__actualQuote2?></p>
+    <p class="quote__author"><?php echo $quote__author?></p>
     <div class="vertical-oval oval-right"></div>
   </div>
 
@@ -139,9 +132,8 @@
               (min-width: 1025px) 80vw"
       alt="bayc billboard" />
     <div class="nft__text-container">
-      <h2 class="nft__text-title">What is <br><span>an nft?</span> </h2>
-      <p class="nft__text">NFT stands for <span class="orange">Non-Fungible Token</span>. It is a digital art piece or a digital version of a physical artwork and is uploaded on the blockchain, a big excel file on the internet. It certifies a digital asset is therefore not interchangeable, it also gives image rights and ownership back to the creators. But keep in mind that NFT's aren't environmental friendly.
-      </p>
+      <h2 class="nft__text-title"><?php echo $nft__textTitle ?></h2>
+      <p class="nft__text"><?php echo $nft__text ?></p>
     </div>
   </div>
 </section>
@@ -149,9 +141,9 @@
 <section class="section__why">
   <div class="oval"></div>
   <div class="nft-why__grid">
-    <div class="why">why</div>
-    <div class="clarendon">clarendon</div>
-    <div class="as-nft">as nft?</div>
+    <div class="why"><?php echo $why ?></div>
+    <div class="clarendon"> <?php echo $clarendon ?></div>
+    <div class="as-nft"><?php echo $asNft?></div>
   </div>
 
   <div class="why__reasons">
@@ -166,15 +158,9 @@
     <!-- </div> -->
 
     <ol>
-      <li>The Clarendon design was immediately after creation
-    very  popular and rapidly <span class="orange">copied</span> by other foundries.
-    Thanks to the blockain, the original can be easily found.</li>
-      <li>Best known as the font of the <span class="orange">lawless</span> Wild West era. The
-    crypto landscape is still in it's infancy and governments
-    are still figuring out how they can regulate this space.</li>
-      <li><span class="orange">Robberies & the gold rush</span> were also characteristic for the
-    Wild West. The same is happening with NFT's where big
-    money goes around & many scammers are lurking around.</li>
+      <li><?php echo $nftReason1?></li>
+      <li><?php echo $nftReason2?></li>
+      <li><?php echo $nftReason3?></li>
     </ol>
   </div>
 </section>
@@ -182,15 +168,15 @@
 <!-- Outlaw/Wanted section -->
 
 <section class="section__outlaws">
-  <div class="outlaws__title">
+  <div class="outlaws__container">
     <p>meet</p>
-    <h2>the outlaws</h2>
+    <h2 class="outlaws__title"><?php echo $outlaws__title?></h2>
   </div>
   <div class="outlaws__wanted-poster">
-    <h2 class="h2__western">wanted</h2>
+    <h2 class="h2__western"><?php echo $h2__western?></h2>
     <div class="wanted__poster-border">
       <div class="wanted-poster__content">
-        <h4 class="wanted__doa">Dead or Alive</h4>
+        <h4 class="wanted__doa"><?php echo $wanted__doa?></h4>
         <img
           class="wanted__img" height="574" width="1198" src="./assets/img/outlawApesDesktop.png"
           srcset="./assets/img/outlawApesDesktop.png 1198,
@@ -204,8 +190,8 @@
           sizes="(min-width: 768px) 80vw,
                   (min-width: 1025px) 80vw"
           alt="derivative fonts clarendon" />
-        <h4 class="wanted__clarendon">Clarendon</h4>
-          <p class="wanted__reward">reward: <i class="fab fa-ethereum"></i> 210 <span class="small">(€900,453)</span></p>
+        <h4 class="wanted__clarendon"><?php echo $wanted__clarendon?></h4>
+          <p class="wanted__reward"><?php echo $wanted__reward?></p>
         </div>
       </div>
     </div>
@@ -215,10 +201,10 @@
 <!-- Bounty section -->
 
 <section class="section__bounty">
-  <h2 class="h2__western">bounty</h2>
+  <h2 class="h2__western bounty__title"><?php echo $bounty__title ?></h2>
   <div class="bounty__board">
-    <p class="board__rules">Find French, Consort & Craw!</p>
-    <p class="board__rules">Click the 3 OUTLAWS in a row to catch them.</p>
+    <p class="board__rules"><?php echo $board__rules1 ?></p>
+    <p class="board__rules"><?php echo $board__rules2 ?></p>
     <div class="game__end"></div>
     <div class="board__game">
     </div>
@@ -227,33 +213,33 @@
 </section>
 
   <article class="end__quote">
-    <p>"There's only room for</p>
+    <p class="quote__text"><?php echo $quote__text1?></p>
     <div class="quote__middle">
-      <p>one <span class="uppercase">font</span></p>
+      <p class="quote__text"><?php echo $quote__text2?></p>
     </div>
-    <p>in this town"</p>
+    <p class="quote__text"><?php echo $quote__text3?></p>
 </article>
 
 <article class="slanted">
   <div class="slanted__title">
-    <p>Read our other issues</p>
+    <p class="slanted__text"><?php echo $slanted__text1 ?></p>
   </div>
   <div class="slanted__next">
-    <h4>Next week:</h4>
-    <p class="uppercase">Futura</p>
+    <h4 class="slanted__subTitle"><?php echo $slanted__subTitle1?></h4>
+    <p class="slanted__text uppercase"><?php echo $slanted__text2?></p>
   </div>
   <div class="slanted__previous">
-    <h4>Previous week:</h4>
-    <p class="uppercase">Bodoni</p>
+    <h4 class="slanted__subTitle"><?php echo $slanted__subTitle2?></h4>
+    <p class="slanted__text uppercase"><?php echo $slanted__text3?></p>
   </div>
 </article>
 
 <footer class="footer">
   <div class="oval-"></div>
   <div class="footer__container">
-    <p>slanted publishers</p>
-    <a href="https://www.slanted.de/">slanted.de</a>
-    <p>By Matthias Boeckaert</p>
+    <p class="footer__text"><?php echo $footer__text1?></p>
+    <a href="https://www.slanted.de/" class="footer__link"><?php echo $footer__link?></a>
+    <p class="footer__text"><?php echo $footer__text2?></p>
   </div>
 </footer>
 

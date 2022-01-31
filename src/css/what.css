@@ -109,7 +109,7 @@
       font-style: italic;
       margin: 1vh 0;
       text-decoration: underline;
-      text-decoration-color: red;
+      text-decoration-color: var(--colorMain);
       text-transform: uppercase;
     }
 
@@ -180,7 +180,7 @@
       font-style: italic;
       margin: 1vh 0;
       text-decoration: underline;
-      text-decoration-color: red;
+      text-decoration-color: var(--colorSecondary);
       text-transform: uppercase;
     }
 

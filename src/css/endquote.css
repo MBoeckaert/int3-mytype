@@ -7,7 +7,7 @@
   color: var(--colorMain);
   font-style: italic;
 
-  & p {
+  & .quote__text {
     font-size: var(--fontBig);
     margin: 2vh 0;
   }
@@ -17,7 +17,7 @@
     border-bottom: .4rem solid var(--colorSecondary);
     color: var(--colorSecondary);
 
-    & p {
+    & .quote__text {
       margin: 2vh;
       font-weight: bold;
       font-family: var(--font);
@@ -31,7 +31,7 @@
   .end__quote {
     height: 60vh;
 
-    & p {
+    & .quote__text {
       font-size: 3.5rem;
       margin: 4vh;
     }
@@ -48,7 +48,7 @@
   .end__quote {
     height: 80vh;
 
-    & p {
+    & .quote__text {
       font-size: 5rem;
       margin: 6vh;
     }

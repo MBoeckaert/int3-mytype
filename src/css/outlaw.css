@@ -1,18 +1,18 @@
 /* Outlaws/Wanted section */
 
-.outlaws__title {
+.outlaws__container {
   width: 80vw;
   margin: 20vh auto 10vh;
 }
 
-.outlaws__title > p {
+.outlaws__container > p {
   color: var(--colorMain);
   margin: 0;
   text-transform: uppercase;
   font-family: var(--font);
 }
 
-.outlaws__title > h2 {
+.outlaws__title {
   margin: 0 auto;
   border: .2rem solid var(--colorMain);
   border-radius: .5rem;
@@ -91,11 +91,11 @@
 /* Tablet */
 @media (min-width: 768px) and (max-width: 1024px) {
 
-  .outlaws__title > p {
+  .outlaws__container > p {
     font-size: var(--fontMedium);
   }
 
-  .outlaws__title > h2 {
+  .outlaws__title {
     font-size: 3rem;
   }
 
@@ -127,11 +127,11 @@
 /* Desktop what is NFT? */
 @media only screen and (min-width: 1025px) {
 
-  .outlaws__title > p {
+  .outlaws__container > p {
     font-size: var(--fontBig);
   }
 
-  .outlaws__title > h2 {
+  .outlaws__container > h2 {
     font-size: 5rem;
   }
 
