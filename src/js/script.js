@@ -67,6 +67,7 @@ const checkCards = e => {
   clickedCard.classList.add('flipped');
   const flippedCards = document.querySelectorAll('.flipped');
   const gameText = document.querySelector('.game__text');
+  const gameEnd = document.querySelector('.game__end');
   //logic
   //if (flippedCards.length === 3) {
   if (
@@ -83,7 +84,7 @@ const checkCards = e => {
       card.style.pointerEvents = 'none';
     });
     bountyGame.style.pointerEvents = 'none';
-    gameText.textContent = 'CAUGHT!';
+    gameEnd.classList.add('caught');
   } else {
     flippedCards.length === 2;
     console.log('wrong');
@@ -93,6 +94,7 @@ const checkCards = e => {
       setTimeout(() => card.classList.remove('toggleCard'), 1000);
     });
     gameText.textContent = 'they got away, try again';
+    setTimeout(() => gameText.textContent = '', 1000);
   }
   //}
 };

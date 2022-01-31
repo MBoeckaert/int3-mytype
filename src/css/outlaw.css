@@ -125,7 +125,7 @@
 }
 
 /* Desktop what is NFT? */
-@media (min-width: 1025px) and (max-width: 1500px) {
+@media only screen and (min-width: 1025px) {
 
   .outlaws__title > p {
     font-size: var(--fontBig);

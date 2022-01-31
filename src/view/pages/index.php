@@ -219,7 +219,9 @@
   <div class="bounty__board">
     <p class="board__rules">Find French, Consort & Craw!</p>
     <p class="board__rules">Click the 3 OUTLAWS in a row to catch them.</p>
-    <div class="board__game"></div>
+    <div class="game__end"></div>
+    <div class="board__game">
+    </div>
     <p class="game__text"></p>
   </div>
 </section>
